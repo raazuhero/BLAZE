@@ -235,13 +235,13 @@ def menu():
 	print('[5] Exit')
 	linex()
 	Aftab=input('[•] Select Option :')
-	if BLAZE =='1':
+	if Aftab =='1':
 		__crack__().plerr()
-	if BLAZE =='2':
+	if Aftab =='2':
 		file()
-	if BLAZE =='3':
+	if Aftab =='3':
 		mrAftab()
-	if BLAZE =='4':
+	if Aftab =='4':
 		print('[•] For this scrpit contact with me');exit()
 	else:
 		print('[•] Select Right Option ');menu()
