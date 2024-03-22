@@ -346,7 +346,7 @@ class __crack__:
             print('\n××××')
             time.sleep(1)
             self.__pler__()
-            
+            exit()
 
   logo="""
         \033[1;36md8888  .d888 888             888      
