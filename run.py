@@ -1228,7 +1228,3 @@ def method():
             loop+=1
          
     
-    
-  
-    
-menu()
