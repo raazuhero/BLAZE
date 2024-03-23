@@ -232,7 +232,7 @@ def menu():
 	clear()
 	print('[1] FILE CLONING AUTO PASS  ')
 	print('[2] FILE CLONING CHOICE PASS ')
-	print('[3] PUBLIC CLONING ') [NOT WORKING]
+	print('[3] PUBLIC CLONING [NOT WORKING] ') 
 	print('[5] Exit')
 	linex()
 	BLAZE=input('[•] Select Option :')
