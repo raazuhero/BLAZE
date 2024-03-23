@@ -1226,5 +1226,8 @@ def method():
                 else:
                     continue
             loop+=1
+	      except requests.exceptions.ConnectionError:
+            self.methodA(sid, name, ps)
+exit()
          
-    
+
