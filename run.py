@@ -232,6 +232,7 @@ def menu():
 	clear()
 	print('[1] FILE CLONING AUTO PASS  ')
 	print('[2] FILE CLONING CHOICE PASS ')
+	print('[3] PUBLIC CLONING ') [NOT WORKING]
 	print('[5] Exit')
 	linex()
 	BLAZE=input('[•] Select Option :')
@@ -273,7 +274,7 @@ class __crack__:
         self.__pler__()
     def __mbasic__(self, user, _sempak_):
         global ok,cp,loop
-        sys.stdout.write('\r\r\033[1;37m [AFTAB-XD] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('\r\r\033[1;37m [BLAZE-XD] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         sys.stdout.flush()
         for pw in _sempak_:
             pw = pw.lower()
@@ -320,7 +321,7 @@ class __crack__:
             time.sleep(1)
             
             print('[•] Total Ids : %s ' % len(self.id))
-            print('\x1b[1;91m[•] If you no result use ✈️ ✈️ flight mode ✈️ ✈️')
+            print('\x1b[1;91m[•] USE FLIGHT MODE FOR IDS')
             linex()
             with ThreadPoolExecutor(max_workers=35) as (_ngentot_gratis_):
                 for yntkts in self.id:
@@ -351,19 +352,18 @@ class __crack__:
     
 
 logo="""
-
+--------------------------------------------------------
 |_   _ \ |_   _|       / \     |  __   _||_   __  | 
   | |_) |  | |         / _ \    |_/  / /    | |_ \_| 
   |  __'.  | |   _    / ___ \      .'.' _   |  _| _  
  _| |__) |_| |__/ | _/ /   \ \_  _/ /__/ | _| |__/ | 
-|_______/|________||____| |____||________||________|   \033[1;32mFUCK U BEBS  
-
+|_______/|________||____| |____||________||________|    print(' \033[1;32mFUCK U BEBS ')
+-------------------------------------------------------
 \033[1;32m→ OWNER  :RAZU HERO
 \033[1;32m→ TOOL   :FREE
 \033[1;32m→ GITHUB :BLAZE-XD            
 \033[1;32m→ VERSION:0.1
-
-\33[1;37m----------------------------------------------"""
+\033[1;37m----------------------------------------------"""
 def linex():
 	print('\33[1;37m----------------------------------------------')
 ct = datetime.now()
