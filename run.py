@@ -346,8 +346,7 @@ class __crack__:
             print('\n××××')
             time.sleep(1)
             self.__pler__()
-            
-  Exit()
+        
             
     
 
