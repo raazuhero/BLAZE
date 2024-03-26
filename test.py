@@ -1,5 +1,3 @@
-a#!/usr/bin/python
-#ALIVE HERO my wp 984921****
 
 import os,zlib
 
