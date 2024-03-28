@@ -813,9 +813,11 @@ def rcrack(uid,pwx,tl):
 			
 			header_freefb = {
 			
+    
     'authority': 'p.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
+    'cache-control': 'max-age=0',
     'dpr': '1.8000000715255737',
     'referer': 'https://p.facebook.com/bookmarks/',
     'sec-ch-prefers-color-scheme': 'dark',
@@ -829,9 +831,11 @@ def rcrack(uid,pwx,tl):
     'sec-fetch-mode': 'navigate',
     'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
+    'service-worker-navigation-preload': '{"k":"rev,1012381695;locale,en_GB;cohort,BP:DEFAULT;branch,trunk;dpr,2;features,;u,100027368653839;","a":"1711625513","t":31536000,"n":"N1MfNgeU","v":"2450","p":4,"r":1012380726,"o":"h2","y":"wblt"}',
     'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36',}
-    
+    'user-agent': 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36',
+    'viewport-width': '980',
+}
 			response = requests.get('https://p.facebook.com/', cookies=cookies, headers=headers)
 					
 			if 'c_user' in log_cookies:
