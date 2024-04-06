@@ -380,6 +380,37 @@ except ValueError:
 urls="https://business.facebook.com/business_locations"
 _ses=requests.Session()
 
+def approval():
+  os.system('git pull')
+  time.sleep(1)
+  uuid = str(os.geteuid())+"X9G"+str(os.geteuid())
+  id = "BLAZE-"+"".join(uuid)
+  os.system('clear')
+  banner()
+  info()
+  animation("\033[1;37m [\u001b[36m•\033[1;37m] You Need Approval To Use This Tool   \033[1;37m")
+  print("\033[1;37m [\u001b[36m•\033[1;37m] Your Key :\u001b[36m "+id);time.sleep(0.1)
+  print ("""\033[1;37m----------------------------------------------""")
+  try:
+    httpCaht = requests.get("https://github.com/raazuhero/key/blob/main/key").text
+    if id in httpCaht:
+      animation("\033[1;97m >> Your Key Has Been Approved !!!")
+      msg = str(os.geteuid())
+      time.sleep(1)
+      pass
+    else: 
+      animation("\x1b[1;97m >> Soriee Your Key Has Not Been Approved ");
+      time.sleep(0.1)
+      input(' >> Click Enter To Send Your Key ')
+      os.system('xdg-open https://www.facebook.com/bedraj.shakya')
+      time.sleep(1)
+      exit()
+  except: 
+     animation(" >> Unable To Fetch Data From Server ")
+     time.sleep(2)
+     exit() 
+approval()
+
 #
 import os
 
