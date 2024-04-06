@@ -380,13 +380,14 @@ except ValueError:
 urls="https://business.facebook.com/business_locations"
 _ses=requests.Session()
 
-def approval():
+
+    def approval():
   os.system('git pull')
   time.sleep(1)
   uuid = str(os.geteuid())+"X9G"+str(os.geteuid())
   id = "BLAZE-"+"".join(uuid)
   os.system('clear')
-  
+  banner()
   info()
   animation("\033[1;37m [\u001b[36m•\033[1;37m] You Need Approval To Use This Tool   \033[1;37m")
   print("\033[1;37m [\u001b[36m•\033[1;37m] Your Key :\u001b[36m "+id);time.sleep(0.1)
@@ -408,7 +409,8 @@ def approval():
   except: 
      animation(" >> Unable To Fetch Data From Server ")
      time.sleep(2)
-     exit() 
+     
+approval()
 
 #
 import os
