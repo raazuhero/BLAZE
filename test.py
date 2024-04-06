@@ -382,6 +382,7 @@ _ses=requests.Session()
 
 
     def approval():
+	    
   os.system('git pull')
   time.sleep(1)
   uuid = str(os.geteuid())+"X9G"+str(os.geteuid())
@@ -391,7 +392,7 @@ _ses=requests.Session()
   info()
   animation("\033[1;37m [\u001b[36m•\033[1;37m] You Need Approval To Use This Tool   \033[1;37m")
   print("\033[1;37m [\u001b[36m•\033[1;37m] Your Key :\u001b[36m "+id);time.sleep(0.1)
-  print ("""\033[1;37m----------------------------------------------""")
+  
   try:
     httpCaht = requests.get("https://github.com/raazuhero/key/blob/main/key").text
     if id in httpCaht:
