@@ -358,11 +358,11 @@ logo="""
  _| |__) |_| |__/ | _/ /   \ \_  _/ /__/ | _| |__/ | 
 |_______/|________||____| |____||________||________| 
 
-\033[1;32m→ AUTHOR :K MA BOKA HAINA RA....
+\033[1;32m→ AUTHOR :K MA BOKA HAINA RA PARAA
 \033[1;32m→ OWNER  :RAZU HERO
-\033[1;32m→ TOOL   :FREE
+\033[1;32m→ TOOL   :ITS FREE FOR U BEBS
 \033[1;32m→ GITHUB :BLAZE-XD            
-\033[1;32m→ VERSION:0.1
+\033[1;32m→ VERSION:1.0
 \033[1;37m----------------------------------------------"""
 def linex():
 	print('\33[1;37m----------------------------------------------')
@@ -550,7 +550,7 @@ url_ip = "https://www.httpbin.org/ip"
 
 url_graph = "https://graph.facebook.com/{}"
 
-header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.5304.105 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]"}
+header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 4.1.2; C5303 Build/12.0.A.1.257) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]"}
 
 bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05": "Mei", "06": "Juni", "07": "Juli", "08": "Agustus", "09": "September", "10": "Oktober", "11": "November", "12": "Desember"}
 
