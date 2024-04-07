@@ -1051,7 +1051,7 @@ def method():
                 if cpok=='n':
                      pass
                 else:
-                     print('\r\033[1;97m [BLAZE-CP] '+acc+'| '+pword+'')
+                     print('\r\033[1;97m [BLAZE-CP] '+acc+' | '+pword+'')
                 cpacc.append(acc)
                 open('/sdcard/BLAZE-CP.txt','a').write(f'{acc} • {pword}\n')
                 break
